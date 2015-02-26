@@ -9,6 +9,6 @@ config.appender(name='Fileapp',
 				properties=props,
 			    layout="model.logging.MyFileLayout");
 
-```javascript
+```
 
 So to create your very own layout object, you just need to extend the LogBox abstract layout object: coldbox.system.logging.Layout.
