@@ -6,6 +6,7 @@
    * [Author](introduction/author.md)
 * [Need For Logging](need_for_logging/README.md)
    * [LogBox Refcard](overview/logbox_refcard.md)
+   * Useful Resources
 * [What Can LogBox Do?](what_can_logbox_do/README.md)
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
    * [LogBox](how_does_logbox_work/logbox.md)
