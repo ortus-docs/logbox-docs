@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
    * [What's New With 2.0.0](introduction/whats_new_with_200.md)
+   * About This Book
 * [Need For Logging](need_for_logging/README.md)
 * [What Can LogBox Do?](what_can_logbox_do/README.md)
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
