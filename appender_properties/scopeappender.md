@@ -1,4 +1,4 @@
-# ScoreAppender
+# ScopeAppender
 
 |Property|Type|Required|Default|Description|
 |--|--|--|--|--|
