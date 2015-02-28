@@ -1,3 +1,3 @@
 # TraceAppender
 
-This appender directs messages via the <i>cftrace</i> tag. It has no configuration properties.
+This appender directs messages via the `cftrace` tag. It has no configuration properties.
