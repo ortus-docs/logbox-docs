@@ -51,6 +51,5 @@
    * [LogBox from the ColdBox Proxy](logbox_in_a_coldbox_application/logbox_from_the_coldbox_proxy.md)
    * [The LogBox autowiring DSL](logbox_in_a_coldbox_application/the_logbox_autowiring_dsl.md)
    * [The LogBox autowiring DSL](logbox_in_a_coldbox_application/the_logbox_autowiring_dsl.md)
-   * [The LogBox autowiring DSL](logbox_in_a_coldbox_application/the_logbox_autowiring_dsl.md)
 * [Summary](summary/README.md)
 
