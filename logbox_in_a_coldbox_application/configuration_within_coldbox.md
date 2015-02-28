@@ -11,6 +11,6 @@ ColdBox allows for a programmatic approach via the `ColdBox.cfc` configuration o
     * **True**:
         * Have you defined a `configFile` key?
             * **True**: Then use that value to pass into the configuration object so it can load LogBox using that configuration file (CFC)
-            * False: The configuration data is going to be defined inline here so process it
+            * **False**: The configuration data is going to be defined inline here so process it
 
-So the configuration DSL is exactly the same as you have seen in before with the only distinction that you can add a configFile key that can point to an external configuration file (XML or CFC).
+So the configuration DSL is exactly the same as you have seen in before with the only distinction that you can add a `configFile` key that can point to an external configuration file (CFC).
