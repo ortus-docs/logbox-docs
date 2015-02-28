@@ -56,4 +56,5 @@
    * [Can I still use the Logger plugin?](logbox_in_a_coldbox_application/can_i_still_use_the_logger_plugin.md)
    * [The LogBox autowiring DSL](logbox_in_a_coldbox_application/the_logbox_autowiring_dsl.md)
 * [Summary](summary/README.md)
+* Installation
 
