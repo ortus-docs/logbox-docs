@@ -2,6 +2,6 @@
 
 Every Layout has access to the following public variables:
 
-* <i>this.logLevel</i> : A reference to the <i>coldbox.system.logging.LogLevels</i> class
-* <i>this.LINE_SE</i>P : A line separator equal to <i>chr(13) & chr(10)</i>
+* `this.logLevels` : A reference to the `coldbox.system.logging.LogLevels` class
+* `this.LINE_SEP` : A line separator equal to `chr(13) & chr(10)`
 
