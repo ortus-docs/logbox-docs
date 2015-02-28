@@ -26,11 +26,7 @@ If you are using LogBox within a ColdBox application context, then LogBox is par
 logbox = new logbox.system.logging.LogBox();
 ```
 
-> **Note** Please remember that if you use the standalone version the namespace is `wirebox.system.ioc` and if you use the ColdBox application version it is `coldbox.system.ioc`. From this point on, we will use the standalone namespace for simplicity.
-<br>
-
-
-# CommandBox Installation
+## CommandBox Installation
 You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox
 
 ```bash
