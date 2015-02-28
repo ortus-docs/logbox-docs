@@ -1,3 +1,7 @@
+
+# LogBox Manual - Version 2.0.0
+![ColdBox Platform](images/LogBox_300.png)
+
 # Introduction
 
 LogBox is an enterprise ColdFusion logging library designed to give you flexibility, simplicity and power when logging or tracing is needed in your applications. LogBox is part of the ColdBox Platform 3.0 suite of services and libraries and allows you to easily build upon it's logging framework in order to meet any logging or reporting needs your applications has. LogBox surpasses ColdFusion's very basic cflog tag. LogBox allows you to create multiple destinations for your loggings and even configure destinations or change them at runtime.
