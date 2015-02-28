@@ -7,7 +7,7 @@
 * [Need For Logging](need_for_logging/README.md)
    * [LogBox Refcard](overview/logbox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
-   * [Features at a Glance](what_can_logbox_do/README.md)
+   * [Features at a Glance](overview/features_at_a_glance.md)
    * [System Requirements](overview/system_requirements.md)
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
    * [LogBox](how_does_logbox_work/logbox.md)
