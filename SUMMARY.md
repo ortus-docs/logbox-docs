@@ -9,6 +9,7 @@
    * [Useful Resources](overview/useful_resources.md)
    * [Features at a Glance](overview/features_at_a_glance.md)
    * [System Requirements](overview/system_requirements.md)
+* Installation
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
    * [LogBox](how_does_logbox_work/logbox.md)
    * [Appender](how_does_logbox_work/appender.md)
@@ -17,7 +18,6 @@
        * [Security Levels](how_does_logbox_work/security.md)
        * [Dynamic Appenders](how_does_logbox_work/dynamic_appenders.md)
    * [Layout](how_does_logbox_work/layout.md)
-* Installation
 * [Configuring LogBox](configuring_logbox/README.md)
    * [Programmatic Configuration](configuring_logbox/programmatic_configuration.md)
        * [LogBox DSL](configuring_logbox/logbox_dsl.md)
