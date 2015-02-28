@@ -41,7 +41,7 @@
    * [CFAppender](appender_properties/cfappender.md)
    * [DBAppender & AsyncDBAppender](appender_properties/dbappender_&_asyncdbappender.md)
    * [EmailAppender](appender_properties/emailappender.md)
-   * [ScoreAppender](appender_properties/scoreappender.md)
+   * [ScopeAppender](appender_properties/scopeappender.md)
    * [SocketAppender](appender_properties/socketappender.md)
    * [TraceAppender](appender_properties/traceappender.md)
    * [TraceAppender](appender_properties/traceappender.md)
