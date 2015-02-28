@@ -1,12 +1,12 @@
-# Adding Categories to Specific Loggin Levels
-The methods shown below are used to add categories to specific severity levels only. Each method can receive 1 to* category arguments.
+# Adding Categories to Specific Logging Levels
+The methods shown below are used to add categories to specific severity levels only. Each method can receive 1 to * category arguments.
 
-* <i>public void DEBUG()</i>
-* <i>public void INFO()</i>
-* <i>public void WARN()</i>
-* <i>public void ERROR()</i>
-* <i>public void FATAL()</i>
-* <i>public void OFF()</i>
+* `public void DEBUG()`
+* `public void INFO()`
+* `public void WARN()`
+* `public void ERROR()`
+* `public void FATAL()`
+* `public void OFF()`
 
 ```javascript
 config.debug("com.model.myclass", "coldbox.system.controller");
