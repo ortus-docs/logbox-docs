@@ -18,10 +18,6 @@ property name="logBox" type="logbox";
 //  Root Logger
 property name="logger" type="logbox:root";
 
-
-//  Named Category For an Object, will grab the category name from the object itself.
-property name="logger" type="logbox:logger:#getMetadata(this).name#";
-
 //  Named Category
 property name="logger" type="logbox:logger:com.api.model";
 
