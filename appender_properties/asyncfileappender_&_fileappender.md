@@ -1,4 +1,5 @@
 # AsyncFileAppender & FileAppender
+
 |Propoerty|Type|Required|Default|Description|
 |--|--|--|--|--|
 |filePath |string |true|---|The location of where to store the log file |
