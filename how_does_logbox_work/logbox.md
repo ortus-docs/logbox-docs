@@ -1,6 +1,6 @@
 # LogBox
 
-LogBox is the core framework you need to instantiate in order to work with logging in your application. You have to instantiate it with a LogBoxConfig object that will hold your logging configurations. To configure the library you can either do it programmatically or via an xml file, the choice is yours. After the library is instantiated and configured you can ask from it a named Logger object so you can start logging or tracing messages.
+LogBox is the core framework you need to instantiate in order to work with logging in your application. You have to instantiate it with a `LogBoxConfig` object that will hold your logging configurations. After the library is instantiated and configured you can ask from it a named Logger object so you can start logging or tracing messages.
 
 You have two ways to use LogBox:
 
