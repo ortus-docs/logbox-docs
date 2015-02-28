@@ -1,6 +1,6 @@
 
 # LogBox Manual - Version 2.0.0
-![ColdBox Platform](images/LogBox_300.png)
+![LogBox](images/LogBox_300.png)
 
 # Introduction
 
