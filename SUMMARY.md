@@ -25,7 +25,7 @@
        * [Configuring The Root Logger](configuring_logbox/configuring_the_root_logger.md)
        * [Adding Categories to Specific Loggin Levels](configuring_logbox/adding_categories_to_specific_loggin_levels.md)
        * [Adding Categories Granularly](configuring_logbox/adding_categories_granularly.md)
-   * [XML Configuration](configuring_logbox/xml_configuration.md)
+   * [XML Schema](configuring_logbox/xml_schema.md)
    * [XML Schema](configuring_logbox/xml_schema.md)
 * [Using LogBox](using_logbox/README.md)
 * [Using a Logger Object](using_a_logger_object/README.md)
