@@ -1,7 +1,9 @@
 # Configuring The Root Logger
 This is also mandatory if you will be using LogBox, you must add a root logger configuration. This is very easy and few arguments.
 
-<i>public void root([numeric levelMin='-1'], [numeric levelMax='4'], string appenders)</i>
+```js
+public void root([numeric levelMin='-1'], [numeric levelMax='4'], string appenders)
+```
 
 Parameters:
 * levelMin - The default log level for the root logger, by default it is 0. Optional.
