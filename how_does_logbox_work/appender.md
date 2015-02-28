@@ -80,4 +80,4 @@ function configure(){
 }
 ```
 
-Another feature of a LogBox appender is that you can <i>extend</i> them or create new ones simply by leveraging the LogBox API. To customize LogBox appenders for your own unique needs you would simply extend the core appender class: <i>coldbox.system.logging.AbstractAppender</i> and implementing the <i>init()</i> and <i>logMessage()</i> methods. Extending LogBox will be reviewed in greater detail over the next few sections.
+Another feature of a LogBox appender is that you can `extend` them or create new ones simply by leveraging the LogBox API. To customize LogBox appenders for your own unique needs you would simply extend the core appender class: <i>coldbox.system.logging.AbstractAppender</i> and implementing the <i>init()</i> and <i>logMessage()</i> methods. Extending LogBox will be reviewed in greater detail over the next few sections.
