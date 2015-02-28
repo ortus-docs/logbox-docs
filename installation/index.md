@@ -18,12 +18,12 @@ LogBox can be downloaded as a standalone framework or it is included with the la
 > **Info** In this book we will be using the standalone namespace for all examples.
 
 
-# Manual Installation
+## Manual Installation
 
-If you are using WireBox within a ColdBox application context, then WireBox is part of the platform. Just install ColdBox normally. If you are using WireBox standalone, just drop WireBox in your application root or create a mapping called `wirebox` that points to the installation folder. If you can run the following snippet, then WireBox is installed correctly:
+If you are using LogBox within a ColdBox application context, then LogBox is part of the platform. Just install ColdBox normally. If you are using LogBox standalone, just drop LogBox in your application root or create a mapping called `logbox` that points to the installation folder. If you can run the following snippet, then LogBox is installed correctly:
 
 ```
-wirebox = new wirebox.system.ioc.Injection();
+logbox = new logbox.system.logging.LogBox();
 ```
 
 > **Note** Please remember that if you use the standalone version the namespace is `wirebox.system.ioc` and if you use the ColdBox application version it is `coldbox.system.ioc`. From this point on, we will use the standalone namespace for simplicity.
