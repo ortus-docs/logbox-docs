@@ -1,6 +1,6 @@
 # The LogBox Injection DSL
 
-The ColdBox autowiring DSL can also talk to LogBox. This way you can easily use our dependency injection DSL for LogBox related objects:
+WireBox DI and Injection can talk to LogBox. This way you can easily use our dependency injection DSL for LogBox related objects:
 
 |Type|Description|
 |--|--|
@@ -12,19 +12,19 @@ The ColdBox autowiring DSL can also talk to LogBox. This way you can easily use 
 Below you can see the most common usage of this dependency DSL:
 
 ```javascript
-<---  LogBox wired in --->
-<cfproperty name="logBox" type="logbox" />
+//  LogBox wired in
+property name="logBox" type="logbox";
 
-<---  Root Logger --->
-<cfproperty name="logger" type="logbox:root" />
+//  Root Logger
+property name="logger" type="logbox:root";
 
 
-<---  Named Category For an Object, will grab the category name from the object itself. --->
-<cfproperty name="logger" type="logbox:logger:#getMetadata(this).name#" />
+//  Named Category For an Object, will grab the category name from the object itself.
+property name="logger" type="logbox:logger:#getMetadata(this).name#";
 
-<---  Named Category --->
-<cfproperty name="logger" type="logbox:logger:com.api.model" />
+//  Named Category
+property name="logger" type="logbox:logger:com.api.model";
 
-<---  Category eq to ClassPath --->
-<cfproperty name="logger" type="logbox:logger:{this}" />
+//  Category eq to ClassPath
+property name="logger" type="logbox:logger:{this}";
 ```
