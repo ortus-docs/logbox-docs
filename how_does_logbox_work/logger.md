@@ -54,12 +54,12 @@ logger = logBox.getLogger(this);
 logger.info("Customer deposited fifty billion dollars into your account. Again.");
 ```
 
-The above two lines of code illustrate the simplicity of getting a named logger from LogBox. Two important question are: What severity messages will the logger log? and What is the destination (or destinations) of these messages? In the above example we did not explicitly configure an answer to these two questions while we created a logger for logbox.system.interceptors.SES, so, LogBox will use the root logger. Thus it will use the root logger's severity level range and configured appenders. So if we wanted to define a category we can define it in various ways via programmatic approach or XML. Let us now look at the programmatic approach:
+The above two lines of code illustrate the simplicity of getting a named logger from LogBox. Two important question are: What severity messages will the logger log? and What is the destination (or destinations) of these messages? In the above example we did not explicitly configure an answer to these two questions while we created a logger for `coldbox.system.interceptors.SES`, so, LogBox will use the root logger. Thus it will use the root logger's severity level range and configured appenders. 
 
 ```javascript
 //register a list of categories that respond to FATAL messages
 //only using the root logger's appenders
-config.fatal("logbox.system.controller","mycfc","com.model.mycfc");
+config.fatal("coldbox.system.controller","mycfc","com.model.mycfc");
 
 // log for errors only using the root logger's appenders
 config.error("mycfc","com.model.mycfc");
@@ -76,7 +76,7 @@ This is the same but using the simplified Data CFC Approach:
 ```javascript
 logBox = {
 	//register a list of categories that respond to FATAL messages
-	fatal = ["logbox.system.controller","mycfc","com.model.mycfc"],
+	fatal = ["coldbox.system.controller","mycfc","com.model.mycfc"],
 	// log for errors only using the root logger's appenders
 	error = ["mycfc","com.model.mycfc"],
 	//log for info only using the root logger's appenders
