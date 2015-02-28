@@ -9,14 +9,14 @@
 |textDBType |string |false |text |The database type for the message and extended info fields. |
 
 The columns needed or created in the table are
-* id : UUID
-* severity : string
-* category : string
-* logdate : timestamp
-* appendername : string
-* message : string
-* extrainfo : string
+* `id` : UUID
+* `severity` : string
+* `category` : string
+* `logdate` : timestamp
+* `appendername` : string
+* `message` : string
+* `extrainfo` : string
 
 If you are building a column mapper, the map must have the above keys in it that match to your own table columns.
 
-> <b>Important</b> Please make sure you update the textDBType property to match your database capabilities for logging.
+> **Important** Please make sure you update the textDBType property to match your database capabilities for logging.
