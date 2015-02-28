@@ -8,4 +8,4 @@
 |autoExpand |boolean |false |true|Whether to expand the file path or not. Defaults to true |
 
 
-> <b>Info</b> Note: Please remember to set the autoExpand property to FALSE if you will be using an absolute file path location.
+> **Info** Please remember to set the `autoExpand` property to **FALSE** if you will be using an absolute file path location.
