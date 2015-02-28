@@ -23,7 +23,7 @@
     * [Adding Appenders](configuring_logbox/adding_appenders.md)
     * [Adding Categories to Specific Loggin Levels](configuring_logbox/adding_categories_to_specific_loggin_levels.md)
     * [Adding Categories Granularly](configuring_logbox/adding_categories_granularly.md)
-   * [Configuring The Root Logger](configuring_logbox/configuring_the_root_logger.md)
+    * [Configuring The Root Logger](configuring_logbox/configuring_the_root_logger.md)
 * [Using LogBox](using_logbox/README.md)
 * [Using a Logger Object](using_a_logger_object/README.md)
    * [Can Methods For Performance](using_a_logger_object/can_methods_for_performance.md)
