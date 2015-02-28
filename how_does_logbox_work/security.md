@@ -19,5 +19,5 @@ logger = logBox.getRootLogger();
 logger.setLevelMin(logger.logLevels.WARN);
 ```
 
-Each logger object has a public property called logLevels that maps to the component: `logbox.system.loggging.LogLevels` which is used as a static lookup of severity levels. You may use the alias, or, the numeric level; however, it is best practice to use a level alias (such as DEBUG or INFO).
+Each logger object has a public property called logLevels that maps to the component: `logbox.system.loggging.LogLevels` which is used as a static lookup of severity levels. You may use the alias, or, the numeric level; however, it is best practice to use a level alias (such as **DEBUG** or **INFO**).
 
