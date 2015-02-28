@@ -19,4 +19,4 @@ The columns needed or created in the table are
 
 If you are building a column mapper, the map must have the above keys in it that match to your own table columns.
 
-> **Important** Please make sure you update the textDBType property to match your database capabilities for logging.
+> **Important** Please make sure you update the `textDBType` property to match your database capabilities for logging.
