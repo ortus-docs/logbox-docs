@@ -9,6 +9,6 @@
 |fileMaxSize|int|false|2000 (2MB)|The max file size for log files. Defaults to 2000 (2 MB) |
 |fileMaxArchives |int|false|2|The max number of archives to keep. Defaults to 2 |
 
-> **Info** Please remember to set the autoExpand property to FALSE if you will be using an absolute file path location.
+> **Info** Please remember to set the `autoExpand` property to FALSE if you will be using an absolute file path location.
 
 
