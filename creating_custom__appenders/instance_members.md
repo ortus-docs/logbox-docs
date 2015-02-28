@@ -2,4 +2,4 @@
 
 Every Appender has access to the following public variables:
 
-* `this.logLevel` : A reference to the coldbox.system.logging.LogLevels class
+* `this.logLevels` : A reference to the `logbox.system.logging.LogLevels` class
