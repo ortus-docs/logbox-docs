@@ -27,8 +27,8 @@ logbox = new logbox.system.logging.LogBox();
 ```
 
 ## CommandBox Installation
-You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox
+You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of LogBox
 
 ```bash
-box install wirebox
+box install logbox
 ```
