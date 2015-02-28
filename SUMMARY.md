@@ -8,6 +8,7 @@
    * [LogBox Refcard](overview/logbox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
    * [What Can LogBox Do?](what_can_logbox_do/README.md)
+   * System Requirements
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
    * [LogBox](how_does_logbox_work/logbox.md)
    * [Appender](how_does_logbox_work/appender.md)
