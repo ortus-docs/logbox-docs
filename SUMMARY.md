@@ -9,7 +9,7 @@
    * [Useful Resources](overview/useful_resources.md)
    * [Features at a Glance](overview/features_at_a_glance.md)
    * [System Requirements](overview/system_requirements.md)
-* Installation
+* [Installation](installation/index.md)
 * [How Does LogBox Work?](how_does_logbox_work/README.md)
    * [LogBox](how_does_logbox_work/logbox.md)
    * [Appender](how_does_logbox_work/appender.md)
