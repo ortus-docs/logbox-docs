@@ -13,15 +13,8 @@ The ColdBox Framework already has an instance of LogBox created for you in every
 
 
 ```javascript
-/** Creating LogBox from within a ColdBox Application **/
-// Create the config object with an XML configuration file
-config = createObject("component","coldbox.system.logging.config.LogBoxConfig").init(expandPath('logbox.xml'));
+// Simple Config
+config = new logbox.system.logging.config.LogBoxConfig();
 // Create logbox instance
-logBox = createObject("component","coldbox.system.logging.LogBox").init(config);
-
-/** Creating LogBox when used as a stand-alone logging framework **/
-// Create the config object with an XML file
-config = createObject("component","logbox.system.logging.config.LogBoxConfig").init(expandPath('logbox.xml'));
-// Create logbox
-logBox = createObject("component","logbox.system.logging.LogBox").init(config);
+logBox = new logbox.system.logging.LogBox( config );
 ```
