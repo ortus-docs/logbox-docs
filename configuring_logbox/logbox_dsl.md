@@ -1,4 +1,5 @@
 # LogBox DSL
+
 In order to create a simple data CFC, just create a CFC with one required method on it called configure where you will define the logging configuration data:
 
 ```javascript
@@ -15,7 +16,7 @@ component{
 }
 ```
 
-Once you have this shell, you will create a logBox variable in the variables scope that must be a structure with the following keys:
+Once you have this shell, you will create a `logBox` variable in the `variables` scope that must be a structure with the following keys:
 
 |Key|Description|
 |--|--|
@@ -31,23 +32,23 @@ Once you have this shell, you will create a logBox variable in the variables sco
 
 So to define an appender you must define a key value which is the internal name of the appender with the following keys:
 
-* class : The class path of the appender
-* layout : The layout class path of the layout object to use (optional)
-* layout : The layout class path of the layout object to use (optional)
-* levelMin : The numerical or English word of the minimal logging level (optional, defaults to 0)
-* levelMax : The numerical or English word of the maximum logging level (optional, defaults to 4)
+* `class` : The class path of the appender
+* `layout` : The layout class path of the layout object to use (optional)
+* `layout` : The layout class path of the layout object to use (optional)
+* `levelMin` : The numerical or English word of the minimal logging level (optional, defaults to 0)
+* `levelMax` : The numerical or English word of the maximum logging level (optional, defaults to 4)
 
 To define the root logger you can use the following keys:
 
-* levelMin : The numerical or English word of the minimal logging level (optional, defaults to 0)
-* levelMax : The numerical or English word of the maximum logging level (optional, defaults to 4)
-* appenders : A <i>string listof the appenders to use for logging</i>
+* `levelMin` : The numerical or English word of the minimal logging level (optional, defaults to 0)
+* `levelMax` : The numerical or English word of the maximum logging level (optional, defaults to 4)
+* `appenders` : A <i>string listof the appenders to use for logging</i>
 
 To define categories you can use the following keys in the categories structure and the key of the structure is the name of the category:
 
-* levelMin : The numerical or English word of the minimal logging level (optional, defaults to 0)
-* levelMax : The numerical or English word of the maximum logging level (optional, defaults to 4)
-* appenders : A <i>string list of the appenders to use for logging (optional, defaults to *)</i>
+* `levelMin`: The numerical or English word of the minimal logging level (optional, defaults to 0)
+* `levelMax`: The numerical or English word of the maximum logging level (optional, defaults to 4)
+* `appenders` : A <i>string list of the appenders to use for logging (optional, defaults to *)</i>
 
 As you might notice the name of the keys on all the structures match 100% to the programmatic methods you can also use to configure logBox. So when in doubt, refer back to the argument names.
 
@@ -82,15 +83,14 @@ logBox = {
 };
 ```
 
-Once you have defined the configuration data in this object you can now use the same LogBox Config object to either instantiate it for you or you can pass a reference of it by using the <i>init()</i> method of the <i>LogBoxConfig</i> object:
+Once you have defined the configuration data in this object you can now use the same LogBox Config object to either instantiate it for you or you can pass a reference of it by using the `init()` method of the `LogBoxConfig` object:
 
 ```javascript
-init([XMLConfig,CFCConfig,CFCConfigPath])
+init([CFCConfig,CFCConfigPath])
 ```
 
-* XMLConfig : The absolute path of the logbox XML configuration file
-* CFCConfig : The object instance that has the logbox configuration data
-* CFCConfigPath : The instantiation path of the object that has the logbox configuration data
+* `CFCConfig` : The object instance that has the logbox configuration data
+* `CFCConfigPath` : The instantiation path of the object that has the logbox configuration data
 
 ```javascript
 // Using config path
@@ -103,4 +103,4 @@ config = createObject("component","coldbox.system.logging.config.LogBoxConfig").
 logBox = createObject("component","coldbox.system.logging.LogBox").init(config);
 ```
 
-That's it! Using this DSL approach, your configurations are much more portable now and can even be shared in ANY framework, ColdBox or ColdFusion application. So now let's explore how to bypass this data CFC and use the <i>LogBoxConfig</i> object directly. It is important to understand these methods as they are called for you when you define your LogBox DSL data.
+That's it! Using this DSL approach, your configurations are much more portable now and can even be shared in ANY framework, ColdBox or ColdFusion application. So now let's explore how to bypass this data CFC and use the `LogBoxConfig` object directly. It is important to understand these methods as they are called for you when you define your LogBox DSL data.
