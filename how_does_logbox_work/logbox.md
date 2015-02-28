@@ -7,11 +7,9 @@ You have two ways to use LogBox:
 * Standalone Framework
 * Within a ColdBox application
 
-If you have downloaded LogBox as a standalone framework, then the initial namespace for the core is logbox.system. This allows you to use logbox as a standalone framework that is integrated into your proprietary application.
+If you have downloaded LogBox as a standalone framework, then the initial namespace for the core is `logbox.system`. This allows you to use logbox as a standalone framework that is integrated into your proprietary application.
 
-The ColdBox Framework already has an instance of LogBox created for you in every application and it is stored in the main application controller: controller.getLogBox(). The namespace within the ColdBox framework is coldbox.system.
-
-> <b>Information</b> Note: Most of the examples shown in this documentation refer the default framework namespace of coldbox.system. However, if you are using LogBox as a standalone framework, then the namespace to use is logbox.system. If you are NOT using the ColdBox Framework, please, take a moment to confirm you are using the correct namespace.
+The ColdBox Framework already has an instance of LogBox created for you in every application and it is stored in the main application controller: `controller.getLogBox()`. The namespace within the ColdBox framework is `coldbox.system`.
 
 
 ```javascript
