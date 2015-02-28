@@ -17,6 +17,7 @@
        * [Security Levels](how_does_logbox_work/security.md)
        * [Dynamic Appenders](how_does_logbox_work/dynamic_appenders.md)
    * [Layout](how_does_logbox_work/layout.md)
+* Installation
 * [Configuring LogBox](configuring_logbox/README.md)
    * [Programmatic Configuration](configuring_logbox/programmatic_configuration.md)
        * [LogBox DSL](configuring_logbox/logbox_dsl.md)
@@ -56,5 +57,4 @@
    * [Can I still use the Logger plugin?](logbox_in_a_coldbox_application/can_i_still_use_the_logger_plugin.md)
    * [The LogBox autowiring DSL](logbox_in_a_coldbox_application/the_logbox_autowiring_dsl.md)
 * [Summary](summary/README.md)
-* Installation
 
