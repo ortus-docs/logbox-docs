@@ -1,4 +1,4 @@
-# What can LogBox do?
+# Features At A Glance
 
 <img src="../images/LogBox-Overview.png">
 
