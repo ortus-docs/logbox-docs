@@ -1,4 +1,4 @@
-# The LogBox WireBox Injection DSL
+# The LogBox Injection DSL
 
 The ColdBox autowiring DSL can also talk to LogBox. This way you can easily use our dependency injection DSL for LogBox related objects:
 
