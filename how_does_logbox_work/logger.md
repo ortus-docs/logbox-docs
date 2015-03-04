@@ -43,7 +43,7 @@ logger.info("Customer deposited fifty billion dollars into your account.");
 
 However, you can simplify the code above by passing the instance of where you are logging from. LogBox will then use the object's fully qualified name, via inspection, to define the logger's category name. This approach is simpler and is our preferred approach. Passing this will support refactorings and object name changes without burdening your application.
 
-> **Important** To stay true to our best practice recommendation of passing this to the `getLogger()` method your CFC must have a name attribute within the component declaration. Example:
+> **Caution** To stay true to our best practice recommendation of passing this to the `getLogger()` method your CFC must have a name attribute within the component declaration. Example:
 
 ```javascript
 // The prefered approach to defining a category name.

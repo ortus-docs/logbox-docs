@@ -12,6 +12,6 @@ Once you have created and configured the LogBox library, you can interact with i
 
 The two most important methods are `getRootLogger() & getLogger()`, which you will use to get the root or named logger objects.
 
-> **Important** When you ask for a named category logger and LogBox cannot find its definition, it will create a logger that will inherit its logging levels and appenders from the root logger.
+> **Caution** When you ask for a named category logger and LogBox cannot find its definition, it will create a logger that will inherit its logging levels and appenders from the root logger.
 
 
