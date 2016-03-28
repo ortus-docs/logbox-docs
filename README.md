@@ -4,10 +4,10 @@
 |  |     |  |  |  | |  |  __  |  |_)  | |  |  |  |  \  V  /  
 |  |     |  |  |  | |  | |_ | |   _  <  |  |  |  |   >   <   
 |  `----.|  `--'  | |  |__| | |  |_)  | |  `--'  |  /  .  \  
-|_______| \______/   \______| |______/   \______/  /__/ \__\ v2.0.0 
+|_______| \______/   \______| |______/   \______/  /__/ \__\
                                                              
 ```
-# LogBox Manual - Version 2.0.0
+# LogBox Manual - Version 2.1.0
 ![LogBox](images/LogBox_300.png)
 
 LogBox is a standalone enterprise ColdFusion (CFML) logging library designed to give you flexibility, simplicity and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries and allows you to easily build upon it's logging framework in order to meet any logging or reporting needs your applications has. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
