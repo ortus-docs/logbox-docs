@@ -19,7 +19,7 @@ config.category( name = "coldbox.system", levelMin = config.logLevels.INFO, appe
 // Implicit Categories
 config.error( "coldbox.system.plugins" );
 // same as
-// config.cateogry( name = "coldbox.system.plugins", levelMin = "ERROR", levelMax = "ERROR", appenders = "*" );
+// config.cateogry( name = "coldbox.system.plugins", levelMax = "ERROR" );
 ```
 
 Then, let's say we request the following logger objects and logged some info:
