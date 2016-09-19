@@ -9,11 +9,11 @@ LogBox can be downloaded as a standalone framework or it is included with the la
 
 **Standalone**
 
-`logbox.system.ioc`
+`logbox.system.logging`
 
 **ColdBox**
 
-`coldbox.system.ioc`
+`coldbox.system.logging`
 
 > **Info** In this book we will be using the standalone namespace for all examples.
 
