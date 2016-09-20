@@ -8,7 +8,7 @@ Once you have created and configured the LogBox library, you can interact with i
 * `string getVersion()` : Get the current version of LogBox
 * `string getCurrentAppenders()` : Get a list of currently registered appenders
 * `string getCurrentLoggers()` : Get a list of currently instantiated loggers
-* `void configure(LogBoxConfig config)` : Dynamically re-configure the LogBox library
+* `void configure( LogBoxConfig config )` : Dynamically re-configure the LogBox library
 
 The two most important methods are `getRootLogger() & getLogger()`, which you will use to get the root or named logger objects.
 
