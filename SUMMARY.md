@@ -40,7 +40,7 @@
     * [FileAppender](appender_properties/asyncfileappender_&_fileappender.md)
     * [RollingFileAppender](appender_properties/asyncrollingfileappender_rollingfileappender.md)
     * [CFAppender](appender_properties/cfappender.md)
-    * [DBAppender & AsyncDBAppender](appender_properties/dbappender_&_asyncdbappender.md)
+    * [DBAppender](appender_properties/dbappender_&_asyncdbappender.md)
     * [EmailAppender](appender_properties/emailappender.md)
     * [ScopeAppender](appender_properties/scopeappender.md)
     * [SocketAppender](appender_properties/socketappender.md)
