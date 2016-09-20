@@ -38,7 +38,7 @@ try{
 	data = dao.getDBData();
 }
 catch(Any e){
-	myLogger.error("Something really died on my dbdata method: #e.message# #e.detail#",e.tagContext);
+	myLogger.error( "Something really died on my dbdata method: #e.message# #e.detail#", e.tagContext );
 }
 ```
 
