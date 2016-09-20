@@ -1,4 +1,5 @@
 # Adding Categories Granularly
+
 You can also add categories with very granular information using the category() method. This method will allow you to add a category definition with a range of severity levels and even a list of which appenders to respond to.
 
 ```js
