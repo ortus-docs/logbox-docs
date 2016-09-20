@@ -3,7 +3,7 @@
 The first thing you need to do in your config object is add appenders. Each appender is added via the `appender()` method.
 
 ```js
-public void appender( string name, string class, [struct properties, string layout, levelMin, levelMax] )
+public void appender( string name, string class, [struct properties,] [string layout,] [levelMin,] [levelMax] )
 ```
 
 ### Parameters:
