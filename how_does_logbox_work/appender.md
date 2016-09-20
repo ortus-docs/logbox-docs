@@ -21,7 +21,7 @@ You may wish your logs to be asynchronous.  You can do so be passing an `async` 
 
 ```javascript
 // Any appender can be asynchronous!
-dbDebugger={
+dbDebugger = {
     class="coldbox.system.logging.appenders.DBAppender",
     properties={
         dsn="blog",
@@ -42,7 +42,7 @@ You can configure LogBox to use one or all of these appenders at any point in ti
 
 ```javascript
 // Adding appenders
-props={
+props = {
     filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
     autoExpand=false,
     fileMaxArchives=1,
@@ -57,7 +57,7 @@ config.appender(
 );
 
 // Socket
-props={ host="localhost", port="444", timeout="3", persistConnection=false };
+props = { host="localhost", port="444", timeout="3", persistConnection=false };
 config.appender(
     name="SocketAppender",
     class="logbox.system.logging.appenders.SocketAppender",
@@ -70,10 +70,10 @@ config.appender(
 ```javascript
 function configure(){
     
-    logBox={
+    logBox = {
         // Register Appenders
-        appenders={
-            MyAsycFile={
+        appenders = {
+            MyAsycFile = {
                 class="logbox.system.logging.appenders.RollingFileAppender",
                 properties={
                     filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
@@ -84,7 +84,7 @@ function configure(){
                 }
             },
 
-            SocketAppender={
+            SocketAppender = {
                 class="logbox.system.logging.appenders.SocketAppender",
                 properties={
                     host="localhost",
