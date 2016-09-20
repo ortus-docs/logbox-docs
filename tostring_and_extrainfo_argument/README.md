@@ -8,7 +8,7 @@ When using any of the logging methods like `info()`, `debug()`, `warn()`, etc, t
 This `extrainfo` argument can be a simple value, a CFC, a complex object and pretty much anything you like. The appenders get this `extraInfo` argument and process it into their appropriate destinations by serializing its value. This is done by using the following algorithm:
 
 1. If it is a simple value, then just use it.
-2. If it is an object then check if the object has a method called `$toString()`. If the method exists, then call `$toString()` and use its return value
+2. If it is an object then check if the object has a method called `$toString()`. If the method exists, then call `$toString()` and use its return value.
 3. If it is an object with NO `$toString()` then marshall its representation in XML format
 4. If it is a complex variable like a struct, query, array, etc, then marshall it to JSON format
 
