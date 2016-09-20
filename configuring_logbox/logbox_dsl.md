@@ -94,13 +94,14 @@ init([CFCConfig,CFCConfigPath])
 
 ```javascript
 // Using config path
-config = createObject("component","coldbox.system.logging.config.LogBoxConfig").init(CFCConfigPath"my.path.LogBoxConfig");
-logBox = createObject("component","coldbox.system.logging.LogBox").init(config);
+config = createObject( "component", "logbox.system.logging.config.LogBoxConfig" )
+    .init( CFCConfigPath="my.path.LogBoxConfig" );
+logBox = createObject( "component", "logbox.system.logging.LogBox" ).init( config );
 
-//Using config object
-data   = createObject("component","my.data.CFC");
-config = createObject("component","coldbox.system.logging.config.LogBoxConfig").init(data);
-logBox = createObject("component","coldbox.system.logging.LogBox").init(config);
+// Using config object
+data = createObject( "component", "my.data.CFC" );
+config = createObject( "component", "logbox.system.logging.config.LogBoxConfig" ).init( data );
+logBox = createObject( "component", "logbox.system.logging.LogBox" ).init( config );
 ```
 
 That's it! Using this DSL approach, your configurations are much more portable now and can even be shared in ANY framework, ColdBox or ColdFusion application. So now let's explore how to bypass this data CFC and use the `LogBoxConfig` object directly. It is important to understand these methods as they are called for you when you define your LogBox DSL data.
