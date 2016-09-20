@@ -6,7 +6,7 @@ The layout component defines the format of the message to store in an appender r
 
 ```javascript
 //add a FileAppender with my own formatting
-props = {filePath='/logs',fileName='Test'};
+props = { filePath='/logs', fileName='Test' };
 config.appender(name='Fileapp',
 			    class="logbox.system.logging.appenders.FileAppender",
 				properties=props,
