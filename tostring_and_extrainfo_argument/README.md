@@ -31,7 +31,7 @@ user = userService.getUser(rc.id);
 
 // need to log it.
 if( log.canDebug() ){
-	log.debug("User just got logged in right now!", user);
+	log.debug( "User just got logged in right now!", user );
 }
 ```
 
