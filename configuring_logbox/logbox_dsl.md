@@ -9,7 +9,7 @@ In order to create a simple data CFC, just create a CFC with one required method
 component{
 
 	function configure(){
-		logBox = {
+		logBox={
 
 		};
 	}
