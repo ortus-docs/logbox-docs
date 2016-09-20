@@ -15,7 +15,7 @@ This `extrainfo` argument can be a simple value, a CFC, a complex object and pre
 As you can see from the algorithm above, you can use the `extraInfo` argument to your benefit to save serialized representations of data to the appenders and then retrieve or re-inflate them later. The `$toString()` convention is great because you have complete control on how a CFC will serialize to its string representation. Let's see an example on a simple CFC:
 
 ```javascript
-// User
+// User.cfc
 component{
 
 	function $toString(){
