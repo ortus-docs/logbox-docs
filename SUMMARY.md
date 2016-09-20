@@ -45,6 +45,7 @@
     * [ScopeAppender](appender_properties/scopeappender.md)
     * [SocketAppender](appender_properties/socketappender.md)
     * [TraceAppender](appender_properties/traceappender.md)
+    * [ConsoleAppender](appender_properties/consoleappender.md)
 * [LogBox in a ColdBox Application](logbox_in_a_coldbox_application/README.md)
     * [Configuration Within ColdBox](logbox_in_a_coldbox_application/configuration_within_coldbox.md)
     * [Benefits of using LogBox in a ColdBox application](logbox_in_a_coldbox_application/benefits_of_using_logbox_in_a_coldbox_application.md)
