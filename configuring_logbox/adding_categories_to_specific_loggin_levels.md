@@ -9,11 +9,11 @@ The methods shown below are used to add categories to specific severity levels o
 * `public void OFF()`
 
 ```javascript
-config.debug("com.model.myclass", "coldbox.system.controller");
-config.info("com.model.otherclass", "coldbox.system.whatever");
-config.fatal("com.model.otherclass", "coldbox.system.whatever");
-config.error("com.model.otherclass", "coldbox.system.whatever");
-config.OFF("com.model.otherclass", "coldbox.system.whatever");
+config.debug( "com.model.myclass", "coldbox.system.controller" );
+config.info( "com.model.otherclass", "coldbox.system.whatever" );
+config.fatal( "com.model.otherclass", "coldbox.system.whatever" );
+config.error( "com.model.otherclass", "coldbox.system.whatever" );
+config.off( "com.model.otherclass", "coldbox.system.whatever" );
 ```
 
 
