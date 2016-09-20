@@ -15,17 +15,31 @@ Parameters:
 * `levelMin` - The numerical or English word of the minimal logging level \(optional, defaults to 0\)
 * `levelMax` - The numerical or English word of the maximum logging level \(optional, defaults to 4\)
 
+### Examples
+
 ```javascript
-config.appender(name="CFConsole",class="coldbox.system.logging.appenders.ConsoleAppender");
-config.appender(name="MyCF",class="coldbox.system.logging.appenders.CFAppender");
+config.appender(
+    name="CFConsole",
+    class="coldbox.system.logging.appenders.ConsoleAppender"
+);
 
-props = {host="localhost",timeout="3",port="444",persistConnection=false};
-config.appender(name="SocketBaby",class="coldbox.system.logging.appenders.SocketAppender",properties=props);
+config.appender(
+    name="MyCF",
+    class="coldbox.system.logging.appenders.CFAppender"
+);
 
-props = {filePath='/logs',fileName='Test'};
-config.appender(name='Fileapp',
-                class="coldbox.system.logging.appenders.FileAppender",
-                properties=props,
-                layout="model.logging.MyFileLayout");
+props = { host="localhost", port="444", timeout="3", persistConnection=false };
+config.appender(
+    name="SocketBaby",
+    class="coldbox.system.logging.appenders.SocketAppender",
+    properties=props
+);
+
+props = { filePath="/logs", fileName="Test" };
+config.appender(
+    name='Fileapp',
+    class="coldbox.system.logging.appenders.FileAppender",
+    properties=props,
+    layout="model.logging.MyFileLayout"
+);
 ```
-
