@@ -21,14 +21,14 @@ You may wish your logs to be asynchronous.  You can do so be passing an `async` 
 
 ```javascript
 // Any appender can be asynchronous!
-dbDebugger = {
-    class = "coldbox.system.logging.appenders.DBAppender",
-    properties = {
-        dsn = "blog",
-        table = "logs",
-        autocreate = true,
-        textDBType = "NCLOB",
-        async = true
+dbDebugger={
+    class="coldbox.system.logging.appenders.DBAppender",
+    properties={
+        dsn="blog",
+        table="logs",
+        autocreate=true,
+        textDBType="NCLOB",
+        async=true
     }
 }
 ```
@@ -42,26 +42,26 @@ You can configure LogBox to use one or all of these appenders at any point in ti
 
 ```javascript
 // Adding appenders
-props = {
-    filePath = expandPath( "/logbox/testing/cases/logging/tmp" ),
-    autoExpand = false,
-    fileMaxArchives = 1,
-    fileMaxSize = 3000,
-    async = true
+props={
+    filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
+    autoExpand=false,
+    fileMaxArchives=1,
+    fileMaxSize=3000,
+    async=true
 };
 
 config.appender(
-    name = "MyAsyncFile",
-    class = "logbox.system.logging.appenders.RollingFileAppender",
-    properties = props
+    name="MyAsyncFile",
+    class="logbox.system.logging.appenders.RollingFileAppender",
+    properties=props
 );
 
 // Socket
-props = { host = "localhost", timeout = "3", port = "444", persistConnection = false };
+props={ host="localhost", port="444", timeout="3", persistConnection=false };
 config.appender(
-    name = "SocketAppender",
-    class = "logbox.system.logging.appenders.SocketAppender",
-    properties = props
+    name="SocketAppender",
+    class="logbox.system.logging.appenders.SocketAppender",
+    properties=props
 );
 ```
 
@@ -70,27 +70,27 @@ config.appender(
 ```javascript
 function configure(){
     
-    logBox = {
+    logBox={
         // Register Appenders
-        appenders = {
-            MyAsycFile = {
-                class = "logbox.system.logging.appenders.RollingFileAppender",
-                properties = {
-                    filePath = expandPath( "/logbox/testing/cases/logging/tmp" ),
-                    autoExpand = false,
-                    fileMaxArchives = 1,
-                    fileMaxSize = 3000,
-                    async = true
+        appenders={
+            MyAsycFile={
+                class="logbox.system.logging.appenders.RollingFileAppender",
+                properties={
+                    filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
+                    autoExpand=false,
+                    fileMaxArchives=1,
+                    fileMaxSize=3000,
+                    async=true
                 }
             },
 
-            SocketAppender = {
-                class = "logbox.system.logging.appenders.SocketAppender",
-                properties = {
-                    host = "localhost",
-                    timeout = "3",
-                    port = "444",
-                    persistConnection = false
+            SocketAppender={
+                class="logbox.system.logging.appenders.SocketAppender",
+                properties={
+                    host="localhost",
+                    port="444",
+                    timeout="3",
+                    persistConnection=false
                 }
             }
         }
