@@ -27,7 +27,7 @@ component{
 So when this object is sent to a logger's method, it will detect it is an object and the `$toString()` function exists and call it for serialization.
 
 ```javascript
-user = userService.getUser(rc.id);
+user = userService.getUser( rc.id );
 
 // need to log it.
 if( log.canDebug() ){
