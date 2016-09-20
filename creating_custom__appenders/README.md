@@ -80,10 +80,7 @@ The signature of the `logMessage` method is the following:
 ```javascript
 <---  logMessage --->
 <cffunction name="logMessage" access="public" output="false" returntype="void">
-	<---************************************************************** --->
 	<cfargument name="logEvent" type="logbox.system.logging.LogEvent" required="true" hint="The logging event to log.">
-	<---************************************************************** --->
-
 </cffunction>
 ```
 
