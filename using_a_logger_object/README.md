@@ -30,9 +30,9 @@ As you can probably tell, all logging methods take in a message string an a seco
 
 ```javascript
 // setting some messages
-myLogger = logBox.getLogger(this); //"com.model.dao"
+myLogger = logBox.getLogger( this ); // "com.model.dao"
 
-myLogger.info("I just created my first logger");
+myLogger.info( "I just created my first logger" );
 
 try{
 	data = dao.getDBData();
