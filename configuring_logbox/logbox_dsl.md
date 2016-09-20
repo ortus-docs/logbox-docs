@@ -67,19 +67,19 @@ logBox = {
 			}
 	},
 	// Root Logger
-	root = {levelMin="FATAL", levelMax="DEBUG", appenders="*"},
+	root = { levelMin="FATAL", levelMax="DEBUG", appenders="*" },
 	// Granualr Categories
-	categories = {
-		"coldbox.system" = { levelMin="FATAL", levelMax="INFO", appenders="*"},
-		"model.security" = { levelMax="DEBUG", appenders="console"}
+	categories={
+		"coldbox.system" = { levelMin="FATAL", levelMax="INFO", appenders="*" },
+		"model.security" = { levelMax="DEBUG", appenders="console" }
 	}
 	// Implicit categories
-	debug  = ["coldbox.system.interceptors"],
-	info   = ["model.class", "model2.class2"],
-	warn   = ["model.class", "model2.class2"],
-	error  = ["model.class", "model2.class2"],
-	fatal  = ["model.class", "model2.class2"],
-	off    = ["model.class", "model2.class2"]
+	debug = [ "coldbox.system.interceptors"  ],
+	info  = [ "model.class", "model2.class2" ],
+	warn  = [ "model.class", "model2.class2" ],
+	error = [ "model.class", "model2.class2" ],
+	fatal = [ "model.class", "model2.class2" ],
+	off   = [ "model.class", "model2.class2" ]
 };
 ```
 
