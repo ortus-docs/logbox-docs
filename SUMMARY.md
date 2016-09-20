@@ -38,7 +38,7 @@
     * [Instance Members](creating_a_custom_layout/instance_members.md)
 * [Appender Properties](appender_properties/README.md)
     * [FileAppender](appender_properties/asyncfileappender_&_fileappender.md)
-    * [AsyncRollingFileAppender & RollingFileAppender](appender_properties/asyncrollingfileappender_rollingfileappender.md)
+    * [RollingFileAppender](appender_properties/asyncrollingfileappender_rollingfileappender.md)
     * [CFAppender](appender_properties/cfappender.md)
     * [DBAppender & AsyncDBAppender](appender_properties/dbappender_&_asyncdbappender.md)
     * [EmailAppender](appender_properties/emailappender.md)
