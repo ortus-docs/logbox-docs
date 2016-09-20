@@ -1,6 +1,6 @@
-# AsyncFileAppender & FileAppender
+# FileAppender
 
-|Propoerty|Type|Required|Default|Description|
+|Property|Type|Required|Default|Description|
 |--|--|--|--|--|
 |filePath |string |true|---|The location of where to store the log file |
 |filename |string |false |Name of the Appender |The name of the file, if not defined, then it will use the name of this appender. Do not append an extension to it. We will append a .log to it |

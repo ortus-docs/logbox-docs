@@ -5,24 +5,21 @@ Every ColdBox application can use LogBox by default since the main engine alread
 ```javascript
 component{
 
-	/**
-	* Configure LogBox, that's it!
-	*/
-	function configure(){
-		logBox = {};
-		
-		// Define Appenders
-		logBox.appenders = {
-			console = { class="coldbox.system.logging.appenders.DummyAppender" }
-		};
-		
-		// Root Logger
-		logBox.root = {
-			levelmax="OFF",
-			levelMin="OFF",
-			appenders="*"
-		};
-	}
+    function configure(){
+        logBox = {};
+
+        // Define Appenders
+        logBox.appenders = {
+            console = { class="coldbox.system.logging.appenders.DummyAppender" }
+        };
+
+        // Root Logger
+        logBox.root = {
+            levelmax="OFF",
+            levelMin="OFF",
+            appenders="*"
+        };
+    }
 
 }
 ```

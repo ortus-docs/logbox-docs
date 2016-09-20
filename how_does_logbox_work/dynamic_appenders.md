@@ -15,12 +15,12 @@ So you can easily add/remove/check the appenders on any logger at any time.
 
 ```javascript
 //Add your own appender at runtime
-jms = createObject("component","com.appender.JMSAppender").init("JMSAppender",properties);
-logger.addAppender(jms);
+jms = createObject( "component", "com.appender.JMSAppender" ).init( "JMSAppender", properties );
+logger.addAppender( jms );
 
 //log a message to all appenders and to my jms appender:
-logger.fatal("I FAILED MAN!");
+logger.fatal( "I FAILED MAN!" );
 
 //remove it
-logger.removeAppender("JMSAppender");
+logger.removeAppender( "JMSAppender" );
 ```

@@ -1,12 +1,9 @@
 # Appender
 
-An appender is an object that LogBox uses to log statements to a destination repository. All appenders act as destinations that can include: databases, JMS, files, consoles, sockets, etc. The appender has the responsibility of taking the logged message and persisting the message or sending the message to an external service. LogBox comes bundled with the following appenders that can be found in the package coldbox.system.logging.appenders:
+An appender is an object that LogBox uses to log statements to a destination repository. All appenders act as destinations that can include: databases, JMS, files, consoles, sockets, etc. The appender has the responsibility of taking the logged message and persisting the message or sending the message to an external service. LogBox comes bundled with the following appenders that can be found in the package `coldbox.system.logging.appenders`:
 
 |Appender|Description|
 |--|--|
-|AsyncFileAppender |An Asynchronous file appender.|
-|AsyncDBAppender |An Asynchronous database appender.|
-|AsyncRollingFileAppender |An Asynchronous file appender that can do file rotation and archiving.|
 |CFAppender |Will deliver messages to the coldfusion logs.|
 |ColdBoxTracerAppender |Will deliver messages to the ColdBox Tracer Panel in the ColdBox debugger.|
 |ConsoleAppender |Will deliver messages to the server's console via system.out |
@@ -18,32 +15,53 @@ An appender is an object that LogBox uses to log statements to a destination rep
 |SocketAppender|Will connect to any server socket and deliver messages. |
 |TracerAppender |Will deliver messages to the ColdFusion tag cftrace. |
 
+**Asynchronous Appenders**
+
+You may wish your logs to be asynchronous.  You can do so be passing an `async` property in your configuration. (  This happens at the `logger` level and is available to all appenders out of the box, even ones that you create yourself!
+
+```javascript
+// Any appender can be asynchronous!
+dbDebugger = {
+    class="logbox.system.logging.appenders.DBAppender",
+    properties={
+        dsn="blog",
+        table="logs",
+        autocreate=true,
+        textDBType="NCLOB",
+        async=true
+    }
+}
+```
+
+## Configuration
+
 You can configure LogBox to use one or all of these appenders at any point in time. You can even register as many instances of any appender by defining a unique name for each. Here are examples of how one can configure appenders programmatically or via the simple configuration CFC:
 
 
 **Programmatic Approach**
 
 ```javascript
-//Adding appenders
+// Adding appenders
 props = {
-	filePath = expandPath("/logbox/testing/cases/logging/tmp"),
-	autoExpand=false,
-	fileMaxArchives=1,
-	fileMaxSize=3000
+    filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
+    autoExpand=false,
+    fileMaxArchives=1,
+    fileMaxSize=3000,
+    async=true
 };
 
 config.appender(
-	name='MyAsyncFile',
-	class="logbox.system.logging.appenders.AsyncRollingFileAppender",
-	properties=props
+    name="MyAsyncFile",
+    class="logbox.system.logging.appenders.RollingFileAppender",
+    properties=props
 );
 
-//socket
-props = { host="localhost", timeout="3", port="444", persistConnection=false };
+// Socket
+props = { host="localhost", port="444", timeout="3", persistConnection=false };
 config.appender(
-	name='SocketAppender',
-	class="logbox.system.logging.appenders.SocketAppender",
-	properties=props
+    name="SocketAppender",
+    class="logbox.system.logging.appenders.SocketAppender",
+    properties=props
 );
 ```
 
@@ -51,32 +69,33 @@ config.appender(
 
 ```javascript
 function configure(){
+    
+    logBox = {
+        // Register Appenders
+        appenders = {
+            MyAsycFile = {
+                class="logbox.system.logging.appenders.RollingFileAppender",
+                properties={
+                    filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
+                    autoExpand=false,
+                    fileMaxArchives=1,
+                    fileMaxSize=3000,
+                    async=true
+                }
+            },
 
-	logBox = {
-		// Register Appenders
-		appenders = {
-			MyAsycFile = {
-				class="logbox.system.logging.appenders.AsyncRollingFileAppender",
-				properties={
-					filePath=expandPath("/logbox/testing/cases/logging/tmp"),
-					autoExpand=false,
-					fileMaxArchives=1,
-					fileMaxSize=3000
-				}
-			},
+            SocketAppender = {
+                class="logbox.system.logging.appenders.SocketAppender",
+                properties={
+                    host="localhost",
+                    port="444",
+                    timeout="3",
+                    persistConnection=false
+                }
+            }
+        }
+    };
 
-			SocketAppender = {
-				class="logbox.system.logging.appenders.SocketAppender",
-				properties = {
-					host="localhost",
-					timeout="3",
-					port="444",
-					persistConnection=false
-				}
-			}
-
-		}
-	};
 }
 ```
 

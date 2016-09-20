@@ -1,4 +1,4 @@
-# DBAppender & AsyncDBAppender
+# DBAppender
 
 |Property|Type|Required|Default|Description|
 |--|--|--|--|--|

@@ -1,4 +1,4 @@
-# AsyncRollingFileAppender & RollingFileAppender
+# RollingFileAppender
 
 |Property|Type|Required|Default|Description|
 |--|--|--|--|--|

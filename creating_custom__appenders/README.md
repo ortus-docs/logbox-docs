@@ -1,10 +1,14 @@
 # Creating Custom  Appenders
 In order to create your own appenders, you will have to create a cfc that extends `logbox.system.logging.AbstractAppender` and implement the following methods:
 
-* `init()` : Your constructor
-* `logMessage()` : The method that is called when a message is received
-* `onRegistration()` : An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation.
-* `onUnRegistration()` : An interceptor that fires when the appender is removed from a logger.
+|Method|Description|
+|---|---|
+|`init()`|Your constructor. Make sure to call `super.init( argumentCollection=arguments );`|
+|`logMessage()`|The method that is called when a message is received.|
+|`onRegistration()`|An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation.|
+|`onUnRegistration()`|An interceptor that fires when the appender is removed from a logger.|
+
+## `init()`
 
 The signature of the init method is the following:
 
@@ -22,7 +26,7 @@ The signature of the init method is the following:
 </cffunction>
 ```
 
-As you can see each appender receives a name, a structure of properties, a layout class, an optional levelMin and levelMax severity levels. The properties and layout are both optional, but you must call the `super.init()` method in order to have full ok operation on the appender. You can then do your own constructor as you see fit. Here is an example:
+As you can see each appender receives a `name`, a structure of `properties`, an optional `layout` class, and an optional `levelMin` and `levelMax` severity levels. The `properties` and `layout` are both optional, but you must call the `super.init( argumentCollection = arguments )` method in order to have full ok operation on the appender. You can then do your own constructor as you see fit. Here is an example:
 
 ```javascript
 <---  Constructor --->
@@ -73,25 +77,24 @@ As you can see each appender receives a name, a structure of properties, a layou
 </cffunction>
 ```
 
+## `logMessage()`
+
 The signature of the `logMessage` method is the following:
 
 ```javascript
 <---  logMessage --->
 <cffunction name="logMessage" access="public" output="false" returntype="void">
-	<---************************************************************** --->
 	<cfargument name="logEvent" type="logbox.system.logging.LogEvent" required="true" hint="The logging event to log.">
-	<---************************************************************** --->
-
 </cffunction>
 ```
 
 As you can see it is a very simple method that receives a LogBox logging event object. This object keeps track of the following properties with its appropriate getters and setters:
 
-* timestamp
-* category
-* message
-* severity
-* extrainfo
+* `timestamp`
+* `category`
+* `message`
+* `severity`
+* `extraInfo`
 
 You can then use this logging event object to log to whatever destination you want. Here is a snippet from our scope appender:
 
@@ -134,7 +137,9 @@ You can then use this logging event object to log to whatever destination you wa
 </cffunction>
 ```
 
-Finally, both the `onRegistration` and `onUnRegistration` methods have to be void methods with no arguments.
+## `onRegistration()` & `onUnregistration()`
+
+Finally, both the `onRegistration` and `onUnregistration` methods have to be void methods with no arguments.
 
 ```javascript
 <cffunction name="onRegistration" access="public" hint="Runs after the appender has been created and registered. Implemented by Concrete appender" output="false" returntype="void">
