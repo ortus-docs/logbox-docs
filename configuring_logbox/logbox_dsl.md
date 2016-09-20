@@ -32,11 +32,13 @@ Once you have this shell, you will create a `logBox` variable in the `variables`
 
 To define an appender you must define a struct with a key value which is the internal name of the appender.  Each appender name must be unique.  You configure each appender with the following keys:
 
-* `class` : The class path of the appender
-* `layout` : The layout class path of the layout object to use (optional)
-* `layout` : The layout class path of the layout object to use (optional)
-* `levelMin` : The numerical or English word of the minimal logging level (optional, defaults to 0)
-* `levelMax` : The numerical or English word of the maximum logging level (optional, defaults to 4)
+|Key|Description|
+|--|--|
+|class|The class path of the appender|
+|properties|The properties struct for the appender (OPTIONAL)|
+|layout|The layout class path of the layout object to use (OPTIONAL)|
+|levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0)|
+|levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4)|
 
 To define the root logger you can use the following keys:
 
