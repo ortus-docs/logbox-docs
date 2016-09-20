@@ -22,7 +22,7 @@ You may wish your logs to be asynchronous.  You can do so be passing an `async` 
 ```javascript
 // Any appender can be asynchronous!
 dbDebugger = {
-    class="coldbox.system.logging.appenders.DBAppender",
+    class="logbox.system.logging.appenders.DBAppender",
     properties={
         dsn="blog",
         table="logs",
