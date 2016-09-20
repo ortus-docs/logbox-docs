@@ -3,7 +3,12 @@
 You can also add categories with very granular information using the category() method. This method will allow you to add a category definition with a range of severity levels and even a list of which appenders to respond to.
 
 ```js
-public void category(string name, [numeric levelMin='0',] [numeric levelMax='4',] [string appenders='*'])
+public void category(
+    string name,
+    [numeric levelMin='0',]
+    [numeric levelMax='4',]
+    [string appenders='*']
+)
 ```
 
 Parameters:
