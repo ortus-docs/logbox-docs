@@ -1,10 +1,12 @@
 # Creating Custom  Appenders
 In order to create your own appenders, you will have to create a cfc that extends `logbox.system.logging.AbstractAppender` and implement the following methods:
 
-* `init()` : Your constructor
-* `logMessage()` : The method that is called when a message is received
-* `onRegistration()` : An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation.
-* `onUnRegistration()` : An interceptor that fires when the appender is removed from a logger.
+|Method|Description|
+|---|---|
+|`init()`|Your constructor. Make sure to call `super.init( argumentCollection=arguments );`|
+|`logMessage()`|The method that is called when a message is received.|
+|`onRegistration()`|An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation.|
+|`onUnRegistration()`|An interceptor that fires when the appender is removed from a logger.|
 
 The signature of the init method is the following:
 
@@ -22,7 +24,7 @@ The signature of the init method is the following:
 </cffunction>
 ```
 
-As you can see each appender receives a name, a structure of properties, a layout class, an optional levelMin and levelMax severity levels. The properties and layout are both optional, but you must call the `super.init()` method in order to have full ok operation on the appender. You can then do your own constructor as you see fit. Here is an example:
+As you can see each appender receives a `name`, a structure of `properties`, an optional `layout` class, and an optional `levelMin` and `levelMax` severity levels. The `properties` and `layout` are both optional, but you must call the `super.init( argumentCollection = arguments )` method in order to have full ok operation on the appender. You can then do your own constructor as you see fit. Here is an example:
 
 ```javascript
 <---  Constructor --->
