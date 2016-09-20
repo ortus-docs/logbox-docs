@@ -30,7 +30,7 @@ Once you have this shell, you will create a `logBox` variable in the `variables`
 |FATAL |An array that will hold all the category names to place under the FATAL logging level (OPTIONAL)|
 |OFF|An array that will hold all the category names to not log at all (OPTIONAL)|
 
-So to define an appender you must define a key value which is the internal name of the appender with the following keys:
+To define an appender you must define a struct with a key value which is the internal name of the appender.  Each appender name must be unique.  You configure each appender with the following keys:
 
 * `class` : The class path of the appender
 * `layout` : The layout class path of the layout object to use (optional)
