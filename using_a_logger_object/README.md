@@ -8,7 +8,7 @@ Every logger has access to the following public variables:
 
 |Property|Description|
 |---|---|
-|logLevels|A reference to the `logbox.system.logging.LogLevels` class.|
+|`this.logLevels`|A reference to the `logbox.system.logging.LogLevels` class.|
 
 
 ## Utility Methods
