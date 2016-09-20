@@ -26,7 +26,7 @@ Once you retrieve a logger object from LogBox, you are ready to start sending me
 |`debug(string message, [any extraInfo=""])`|Log a debug message|
 |`logMessage(string message, numeric severity, [any extraInfo=""])`|Log any kind of message|
 
-As you can probably tell, all logging methods take in a message string an a second argument called `extraInfo`. This `extraInfo` argument can be anything from a string, a structure, a query or whatever. This way you can send in a complex structure that the appenders will serialize into message form or log into its appropriate channel. Thus, `extraInfo` can be very handy when you are building your own custom appenders.
+As you can probably tell, all logging methods take in a message string an a second argument called `extraInfo`. This `extraInfo` argument can be anything from a string, a structure, a query or whatever. This way you can send in a complex structure that the appenders will serialize into message form or log into the appropriate channel. Thus, `extraInfo` can be very handy when you are building your own custom appenders.
 
 ```javascript
 // setting some messages
