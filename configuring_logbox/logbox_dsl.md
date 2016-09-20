@@ -16,6 +16,8 @@ component{
 }
 ```
 
+## Base Config
+
 Once you have this shell, you will create a `logBox` variable in the `variables` scope that must be a structure with the following keys:
 
 |Key|Description|
@@ -30,6 +32,8 @@ Once you have this shell, you will create a `logBox` variable in the `variables`
 |FATAL |An array that will hold all the category names to place under the FATAL logging level (OPTIONAL)|
 |OFF|An array that will hold all the category names to not log at all (OPTIONAL)|
 
+### Appenders
+
 To define an appender you must define a struct with a key value which is the internal name of the appender.  Each appender name must be unique.  You configure each appender with the following keys:
 
 |Key|Description|
@@ -40,19 +44,29 @@ To define an appender you must define a struct with a key value which is the int
 |levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])|
 |levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])|
 
-To define the root logger you can use the following keys:
+### Root Logger
 
-* `levelMin` : The numerical or English word of the minimal logging level (optional, defaults to 0)
-* `levelMax` : The numerical or English word of the maximum logging level (optional, defaults to 4)
-* `appenders` : A <i>string listof the appenders to use for logging</i>
+To configure the root logger use the following keys:
 
-To define categories you can use the following keys in the categories structure and the key of the structure is the name of the category:
+|Key|Description|
+|--|--|
+|levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])|
+|levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])|
+|appenders|A string list of the appenders to use for logging|
 
-* `levelMin`: The numerical or English word of the minimal logging level (optional, defaults to 0)
-* `levelMax`: The numerical or English word of the maximum logging level (optional, defaults to 4)
-* `appenders` : A <i>string list of the appenders to use for logging (optional, defaults to *)</i>
+### Categories
+
+To define categories you must define a struct with a key value which is the internal name of the category. Each category name must be unique. You configure each category with the following keys:
+
+|Key|Description|
+|--|--|
+|levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])|
+|levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])|
+|appenders|A string list of the appenders to use for logging (OPTIONAL, defaults to *)|
 
 As you might notice the name of the keys on all the structures match 100% to the programmatic methods you can also use to configure logBox. So when in doubt, refer back to the argument names.
+
+#### Example Configuration
 
 ```javascript
 logBox = {
@@ -84,6 +98,8 @@ logBox = {
 	off   = [ "model.class", "model2.class2" ]
 };
 ```
+
+## Instantiation
 
 Once you have defined the configuration data in this object you can now use the same LogBox Config object to either instantiate it for you or you can pass a reference of it by using the `init()` method of the `LogBoxConfig` object:
 
