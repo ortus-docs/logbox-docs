@@ -10,7 +10,7 @@ This will call the logger's `debug()` method, execute the lines of code and then
 
 ```javascript
 if( log.canDebug() ){
-	log.debug("This is my log message, some #dynamic# date is here", dataCFC);
+    log.debug( "This is my log message, some #dynamic# date is here", dataCFC );
 }
 ```
 
