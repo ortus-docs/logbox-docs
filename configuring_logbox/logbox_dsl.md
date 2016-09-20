@@ -37,8 +37,8 @@ To define an appender you must define a struct with a key value which is the int
 |class|The class path of the appender|
 |properties|The properties struct for the appender (OPTIONAL)|
 |layout|The layout class path of the layout object to use (OPTIONAL)|
-|levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0)|
-|levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4)|
+|levelMin|The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 or FATAL)|
+|levelMax|The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 or DEBUG)|
 
 To define the root logger you can use the following keys:
 
