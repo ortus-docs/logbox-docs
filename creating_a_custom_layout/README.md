@@ -6,7 +6,6 @@ You can easily create a custom layout object by creating a cfc that extends our 
 <---  format --->
 <cffunction name="format" output="false" access="public" returntype="string" hint="Format a logging event message into your own format">
 	<cfargument name="logEvent" type="logbox.system.logging.LogEvent"   required="true"   hint="The logging event to use to create a message.">
-
 </cffunction>
 ```
 
