@@ -2,7 +2,7 @@
 
 Once you retrieve a logger object from LogBox, you are ready to start sending messages. We already covered how to dynamically add/remove/list/check appenders from a logger, so let's look at the other methods we have available:
 
-##Utility Methods
+## Utility Methods
 
 * `boolean canLog(numeric level)` : Checks if this logger can log a certain type of severity, there is also a can{severity}() method for each severity level.
 * `boolean can{severity}()` : Checks if this logger can log a certain type of severity
@@ -14,7 +14,7 @@ Once you retrieve a logger object from LogBox, you are ready to start sending me
 * `numeric getLevelMax()` : Get the maximum severity level
 * `void setLevelMax(numeric level)` : Set the maximum severity level
 
-##Logging Methods
+## Logging Methods
 
 * `fatal(string message, [any extraInfo=' '])` : Log a fatal message
 * `error(string message, [any extraInfo=' '])` : Log an error message
