@@ -5,7 +5,6 @@ An appender is an object that LogBox uses to log statements to a destination rep
 |Appender|Description|
 |--|--|
 |CFAppender |Will deliver messages to the coldfusion logs.|
-|ColdBoxTracerAppender |Will deliver messages to the ColdBox Tracer Panel in the ColdBox debugger.|
 |ConsoleAppender |Will deliver messages to the server's console via system.out |
 |DBAppender|Will deliver messages to a database table. It can auto create the table for you. |
 |EmailAppender |Will deliver messages to any email address.|
