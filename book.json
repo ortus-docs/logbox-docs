@@ -12,7 +12,8 @@
         "richquotes",
         "edit-link",
         "github",
-        "advanced-emoji"
+        "advanced-emoji",
+        "sitemap"
     ],
     "pluginsConfig": {
     	"edit-link": {
@@ -21,6 +22,9 @@
         },
         "github": {
             "url": "https://github.com/coldbox/coldbox-platform"
+        },
+        "sitemap": {
+            "hostname": "https://logbox.ortusbooks.com"
         }
     },
     "links": {
