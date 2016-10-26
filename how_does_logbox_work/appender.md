@@ -72,7 +72,7 @@ function configure(){
     logBox = {
         // Register Appenders
         appenders = {
-            MyAsycFile = {
+            MyAsyncFile = {
                 class="logbox.system.logging.appenders.RollingFileAppender",
                 properties={
                     filePath=expandPath( "/logbox/testing/cases/logging/tmp" ),
