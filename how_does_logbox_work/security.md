@@ -1,4 +1,4 @@
-# Security Levels
+# Severity Levels
 
 Each logger will be configured with an optional severity level range: `LevelMin and LevelMax`. These severities are integers from `-1 to 4`, each representing a severity:
 
