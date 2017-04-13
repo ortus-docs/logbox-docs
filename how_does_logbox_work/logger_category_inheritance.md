@@ -6,20 +6,36 @@ The overall premise is that when you request a logger with a category name LogBo
 
 ```javascript
 // Appenders
-config.appender( name="console", class="logbox.system.logging.appenders.ConsoleAppender" );
-config.appender( name="file", class="logbox.system.logging.appenders.FileAppender", properties={ filePath="/logs" } )
+config.appender(
+  name="console",
+  class="logbox.system.logging.appenders.ConsoleAppender"
+);
+config.appender(
+  name="file",
+  class="logbox.system.logging.appenders.FileAppender",
+  properties={ filePath="/logs" }
+)
 ```
 
 And some categories like this:
 
 ```javascript
 // Explicit Categories
-config.category( name="coldbox.system", levelMin=config.logLevels.INFO, appenders="console" );
+config.category(
+  name="coldbox.system",
+  levelMin=config.logLevels.INFO,
+  appenders="console"
+);
 
 // Implicit Categories
-config.error( "coldbox.system.plugins" );
+config.error(
+  "coldbox.system.plugins"
+);
 // same as
-// config.cateogry( name="coldbox.system.plugins", levelMax="ERROR" );
+config.cateogry(
+  name="coldbox.system.plugins",
+  levelMax="ERROR"
+);
 ```
 
 Then, let's say we request the following logger objects and logged some info:
