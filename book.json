@@ -19,7 +19,7 @@
     ],
     "pluginsConfig": {
     	"edit-link": {
-            "base": "https://github.com/coldbox/logbox-docs/tree/master",
+            "base": "https://github.com/ortus-docs/logbox-docs/tree/master",
             "label": "Edit This Page"
         },
         "github": {
