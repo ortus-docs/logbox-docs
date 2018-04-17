@@ -2,26 +2,16 @@
 
 LogBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release. The main difference between both versions is the instantiation and usage namespace, the rest is the same.
 
-* [Download LogBox Standalone](http://www.coldbox.org/download)
-* [Download API Docs](http://www.coldbox.org/api)
+The best way to install LogBox is using **CommandBox CLI and package manager**.
 
-# System Requirements
+* [Download LogBox Standalone](https://www.coldbox.org/download)
+* [API Docs](https://apidocs.ortussolutions.com/logbox/5.0.0/index.html)
+
+## System Requirements
 
 * ColdFusion 11+
 * Lucee 4.5+
 
-
-## Namespaces
-
-**Standalone**
-
-`logbox.system.logging`
-
-**ColdBox**
-
-`coldbox.system.logging`
-
-> **Info** In this book we will be using the standalone namespace for all examples.
 
 ## Manual Installation
 
@@ -38,6 +28,20 @@ You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox)
 ```bash
 box install logbox
 ```
+
+## Namespaces
+
+**Standalone**
+
+`logbox.system.logging`
+
+**ColdBox**
+
+`coldbox.system.logging`
+
+> **Info** In this book we will be using the standalone namespace for all examples.
+
+
 
 # Useful Resources
 
