@@ -17,7 +17,7 @@ The best way to install LogBox is using **CommandBox CLI and package manager**.
 
 If you are using LogBox within a ColdBox application context, then LogBox is part of the platform. Just install ColdBox normally. If you are using LogBox standalone, just drop LogBox in your application root or create a mapping called `logbox` that points to the installation folder. If you can run the following snippet, then LogBox is installed correctly:
 
-```cfm
+```js
 logbox = new logbox.system.logging.LogBox();
 ```
 
