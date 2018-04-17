@@ -24,5 +24,5 @@ component{
 }
 ```
 
-Also, the app will log on ANY severity by default up to `INFO` for the root logger and the ColdBox package. You can customize this default behavior by creating or modifying the `LogBox` element in your ColdBox configuration file and follow the same configuration approach as any normal LogBox configuration file.
+Also, the app will log on **ANY** severity by default up to `INFO` for the root logger and the ColdBox package. You can customize this default behavior by creating or modifying the `LogBox` element in your ColdBox configuration file and follow the same configuration approach as any normal LogBox configuration file.
 
