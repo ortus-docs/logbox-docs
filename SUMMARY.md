@@ -8,12 +8,6 @@
   * [What's New With 2.0.0](intro/whats-new-with-2.0.0.md)
   * [About This Book](about-this-book.md)
   * [Author](author.md)
-* [Need For Logging](need-for-logging/README.md)
-  * [LogBox Refcard](need-for-logging/logbox-refcard.md)
-  * [Useful Resources](need-for-logging/useful-resources.md)
-  * [Features at a Glance](need-for-logging/features-at-a-glance.md)
-  * [System Requirements](need-for-logging/system-requirements.md)
-* [Installation](installation.md)
 * [How Does LogBox Work?](how-does-logbox-work/README.md)
   * [LogBox](how-does-logbox-work/logbox.md)
   * [Appender](how-does-logbox-work/appender.md)
@@ -57,4 +51,10 @@
   * [The LogBox Injection DSL](logbox-in-a-coldbox-application/the-logbox-injection-dsl.md)
 
 ## Getting Started
+
+* [Need For Logging](need-for-logging/README.md)
+  * [LogBox Refcard](need-for-logging/logbox-refcard.md)
+  * [Features at a Glance](need-for-logging/features-at-a-glance.md)
+  * [System Requirements](need-for-logging/system-requirements.md)
+* [Installation](installation.md)
 
