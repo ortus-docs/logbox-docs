@@ -26,7 +26,11 @@ logbox = new logbox.system.logging.LogBox();
 You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of LogBox
 
 ```bash
+# Latest CommandBox
 box install logbox
+
+# Bleeding Edge
+box install logbox@be
 ```
 
 ## Namespaces
@@ -42,8 +46,7 @@ box install logbox
 > **Info** In this book we will be using the standalone namespace for all examples.
 
 
-
-# Useful Resources
+## Useful Resources
 
 * [LogBox Docs Source](https://github.com/coldbox/logbox-docs)
 * [LogBox Planning Board](https://ortussolutions.atlassian.net/browse/LOGBOX)
