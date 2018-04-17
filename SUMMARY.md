@@ -55,6 +55,5 @@
 * [Need For Logging](need-for-logging/README.md)
   * [LogBox Refcard](need-for-logging/logbox-refcard.md)
   * [Features at a Glance](need-for-logging/features-at-a-glance.md)
-  * [System Requirements](need-for-logging/system-requirements.md)
 * [Installation](installation.md)
 

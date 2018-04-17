@@ -5,6 +5,12 @@ LogBox can be downloaded as a standalone framework or it is included with the la
 * [Download LogBox Standalone](http://www.coldbox.org/download)
 * [Download API Docs](http://www.coldbox.org/api)
 
+# System Requirements
+
+* ColdFusion 11+
+* Lucee 4.5+
+
+
 ## Namespaces
 
 **Standalone**
