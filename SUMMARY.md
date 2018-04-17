@@ -3,6 +3,7 @@
 ## Intro
 
 * [Introduction](README.md)
+  * [What's New With 5.0.0](intro/whats-new-with-500.md)
   * [What's New With 2.1.0](intro/whats-new-with-2.1.0.md)
   * [What's New With 2.0.0](intro/whats-new-with-2.0.0.md)
   * [Author](author.md)
@@ -55,9 +56,5 @@
   * [LogBox from the ColdBox Proxy](logbox-in-a-coldbox-application/logbox-from-the-coldbox-proxy.md)
   * [The LogBox Injection DSL](logbox-in-a-coldbox-application/the-logbox-injection-dsl.md)
 
-
-
 ## Getting Started
-
-
 
