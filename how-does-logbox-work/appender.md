@@ -7,6 +7,7 @@ An appender is an object that LogBox uses to log statements to a destination rep
 | CFAppender | Will deliver messages to the coldfusion logs. |
 | ConsoleAppender | Will deliver messages to the server's console via system.out |
 | DBAppender | Will deliver messages to a database table. It can auto create the table for you. |
+| DummyAppender | An endless void of nothingness |
 | EmailAppender | Will deliver messages to any email address. |
 | FileAppender | Will deliver messages a file. |
 | RollingFileAppender | A file appender that can do file rotation and archiving. |
@@ -16,7 +17,7 @@ An appender is an object that LogBox uses to log statements to a destination rep
 
 **Asynchronous Appenders**
 
-You may wish your logs to be asynchronous. You can do so be passing an `async` property in your configuration. \( This happens at the `logger` level and is available to all appenders out of the box, even ones that you create yourself!
+You may wish your logs to be asynchronous. You can do so by passing an `async` property in your configuration. \( This happens at the `logger` level and is available to all appenders out of the box, even ones that you create yourself!
 
 ```javascript
 // Any appender can be asynchronous!
