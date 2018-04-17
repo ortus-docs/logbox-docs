@@ -1,9 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [What's New With 2.1.0](whats-new-with-2.1.0.md)
-* [What's New With 2.0.0](whats-new-with-2.0.0.md)
-* [About This Book](about-this-book.md)
 * [Author](author.md)
 * [Need For Logging](need-for-logging/README.md)
   * [LogBox Refcard](need-for-logging/logbox-refcard.md)
@@ -26,6 +23,7 @@
   * [Adding Categories Granularly](configuring-logbox/adding-categories-granularly.md)
   * [Configuring The Root Logger](configuring-logbox/configuring-the-root-logger.md)
 * [Using LogBox](using-logbox.md)
+* [About This Book](about-this-book.md)
 * [Using a Logger Object](using-a-logger-object/README.md)
   * [Can Methods For Performance](using-a-logger-object/can-methods-for-performance.md)
   * [$toString\(\) and ExtraInfo Argument](using-a-logger-object/usdtostring-and-extrainfo-argument.md)
@@ -52,5 +50,11 @@
   * [Where is LogBox stored in a ColdBox app?](logbox-in-a-coldbox-application/where-is-logbox-stored-in-a-coldbox-app.md)
   * [LogBox from the ColdBox Proxy](logbox-in-a-coldbox-application/logbox-from-the-coldbox-proxy.md)
   * [The LogBox Injection DSL](logbox-in-a-coldbox-application/the-logbox-injection-dsl.md)
-* [Summary](summary.md)
+
+## Intro
+
+* [What's New With 2.1.0](intro/whats-new-with-2.1.0.md)
+* [What's New With 2.0.0](intro/whats-new-with-2.0.0.md)
+
+## Getting Started
 
