@@ -9,7 +9,7 @@
 |_______| \______/   \______| |______/   \______/  /__/ \__\
 ```
 
-## LogBox Manual - Version 2.1.0
+## LogBox Manual - Version 5.0.0
 
 ![LogBox](.gitbook/assets/logbox_300.png)
 
@@ -19,7 +19,7 @@ Almost every application needs logging and/or tracing capabilities and we have d
 
 ## Versioning
 
-LogBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
+LogBox is maintained under the [Semantic Versioning](https://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
 
 ```text
 <major>.<minor>.<patch>
@@ -33,7 +33,7 @@ And constructed with the following guidelines:
 
 ## License
 
-The ColdBox Platform, LogBox is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.
+The ColdBox Platform, LogBox is open source and licensed under the [Apache 2](https://www.apache.org/licenses/LICENSE-2.0.html) License.
 
 * Copyright by Ortus Solutions, Corp
 * ColdBox is a registered trademark by Ortus Solutions, Corp
@@ -67,17 +67,19 @@ ColdBox is a professional open source software backed by [Ortus Solutions, Corp]
 
 ## Resources
 
-* Official Site: [http://www.coldbox.org](http://www.coldbox.org)
+* Official Site: [http://www.coldbox.org](https://www.coldbox.org)
 * Source Code: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/LOGBOX](https://ortussolutions.atlassian.net/browse/LOGBOX)
 * Twitter: [@coldbox](http://www.twitter.com/coldbox)
 * Facebook: [https://www.facebook.com/coldboxplatform](https://www.facebook.com/coldboxplatform)
 * Google+: [https://www.google.com/+ColdboxOrg](https://www.google.com/+ColdboxOrg)
-* Vimeo Channel: [http://vimeo.com/channels/coldbox](http://vimeo.com/channels/coldbox)
+* Vimeo Channel: [http://vimeo.com/channels/coldbox](https://vimeo.com/channels/coldbox)
 
 ### HONOR GOES TO GOD ABOVE ALL
 
 Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
+
+
 
