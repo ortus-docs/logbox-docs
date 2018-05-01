@@ -13,7 +13,7 @@ Below you can see the most common usage of this dependency DSL:
 
 ```javascript
 //  LogBox wired in
-property name="logBox" type="logbox";
+property name="logBox" inject="logbox";
 
 //  Root Logger
 property name="logger" type="logbox:root";
