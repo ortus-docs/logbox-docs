@@ -1,4 +1,4 @@
-# Adding Categories to Specific Loggin Levels
+# Adding Categories to Specific Logging Levels
 
 The methods shown below are used to add categories to specific severity levels only. Each method can receive 1 to \* category arguments.
 
