@@ -5,6 +5,7 @@
 ## Intro
 
 * [Introduction](intro/readme/README.md)
+  * [What's New With 5.4.0](intro/readme/whats-new-with-5.4.0.md)
   * [What's New With 5.3.0](intro/readme/whats-new-with-5.3.0.md)
   * [What's New With 5.0.0](intro/readme/whats-new-with-500.md)
   * [What's New With 2.1.0](intro/readme/whats-new-with-2.1.0.md)

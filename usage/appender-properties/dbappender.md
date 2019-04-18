@@ -18,3 +18,4 @@ The columns needed or created in the table are
 * `extrainfo` : string
 
 If you are building a column mapper, the map must have the above keys in it that match to your own table columns.
+
