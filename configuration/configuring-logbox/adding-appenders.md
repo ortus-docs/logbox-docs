@@ -30,18 +30,16 @@ config.appender(
     class="coldbox.system.logging.appenders.CFAppender"
 );
 
-props = { host="localhost", port="444", timeout="3", persistConnection=false };
 config.appender(
     name="SocketBaby",
     class="coldbox.system.logging.appenders.SocketAppender",
-    properties=props
+    properties={ host="localhost", port="444", timeout="3", persistConnection=false }
 );
 
-props = { filePath="/logs", fileName="Test" };
 config.appender(
     name='Fileapp',
     class="coldbox.system.logging.appenders.FileAppender",
-    properties=props,
+    properties={ filePath="/logs", fileName="Test" },
     layout="model.logging.MyFileLayout"
 );
 ```
