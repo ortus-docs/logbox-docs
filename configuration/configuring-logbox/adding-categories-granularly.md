@@ -15,7 +15,7 @@ public void category(
 
 | Name | Description |
 | :--- | :--- |
-| name | A unique name for the appender to register. Only unique names can be registered per instance. |
+| name | A unique name for the category to register. Only unique names can be registered per instance. |
 | levelMin | The default min log level for this category. \(OPTIONAL. Defaults to 0 \[FATAL\].\) |
 | levelMax | The max default log level for this category. \(OPTIONAL. Defaults to 4 \[DEBUG\].\) |
 | appenders | A list of appender names to configure this category with else it will use all the appenders in the root logger. You can also use \* to add all registered apenders. \(OPTIONAL\) |
