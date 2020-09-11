@@ -3,7 +3,7 @@
 WireBox DI and Injection can talk to LogBox. This way you can easily use our dependency injection DSL for LogBox related objects:
 
 | Type | Description |
-| --- | --- |
+| :--- | :--- |
 | `logbox` | Get a reference to the application's LogBox instance |
 | `logbox:root` | Get a reference to the root logger |
 | `logbox:logger:category` | Get a reference to a named logger by its category name |

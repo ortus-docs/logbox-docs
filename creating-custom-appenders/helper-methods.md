@@ -5,7 +5,7 @@ The abstract appender also has various cool methods that you can use when buildi
 ## Properties Methods
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `struct getProperties()` | Get the entire properties struct. |
 | `void setProperties(struct properties)` | Override all properties with a new properties struct. |
 | `any getProperty(string property)` | Get a property. |
@@ -15,7 +15,7 @@ The abstract appender also has various cool methods that you can use when buildi
 ## Utility Methods
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `boolean isInitialized()` | Returns true if the appender has been initialized. |
 | `string getName()` | Get the name of the appender |
 | `string getHash()` | Get the appender's unique hash id |
@@ -24,7 +24,7 @@ The abstract appender also has various cool methods that you can use when buildi
 ## Layout Methods
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `any getCustomLayout()` | Get the custom layout object if defined. |
 | `boolean hasCustomLayout()` | Checks if the custom layout object is defined in this appender. |
 

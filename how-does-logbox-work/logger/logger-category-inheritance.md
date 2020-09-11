@@ -53,7 +53,7 @@ logger.debug( "a cool debug message" );
 > **Information** All example code snippets are using a `getLogger( "categoryname" )` call instead of our preferred approach of `getLogger( this )` because we want to showcase which category we are talking about. Please take this into consideration.
 
 | Category | Configured Levels | Assigned Levels | Appenders |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | root | FATAL-DEBUG | FATAL-DEBUG | console,file |
 | `coldbox.system` | INFO-DEBUG | INFO-DEBUG | console |
 | `coldbox.system.plugins` | ERROR | ERROR | \* |
@@ -67,7 +67,7 @@ The second logger is called `coldbox.system.interceptors.SES`, LogBox tries to m
 These examples should give you insight into category inheritance and the power they provide. You can easily turn toggle logging for entire packages with a single category definition. However, this is great only if you follow the dot notation conventions. Below is a sample generic chart sample:
 
 | Category | Configured Levels | Assigned Levels |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | root | FATAL-DEBUG | FATAL-DEBUG |
 | x | NONE | FATAL-DEBUG from `root` |
 | x.y | INFO | INFO |

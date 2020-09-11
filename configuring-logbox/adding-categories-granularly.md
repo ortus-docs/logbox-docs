@@ -14,7 +14,7 @@ public void category(
 ## Parameters:
 
 | Name | Description |
-| --- | --- |
+| :--- | :--- |
 | name | A unique name for the appender to register. Only unique names can be registered per instance. |
 | levelMin | The default min log level for this category. \(OPTIONAL. Defaults to 0 \[FATAL\].\) |
 | levelMax | The max default log level for this category. \(OPTIONAL. Defaults to 4 \[DEBUG\].\) |

@@ -9,7 +9,7 @@ public void appender( string name, string class, [struct properties={},] [string
 ## Parameters:
 
 | Name | Description |
-| --- | --- |
+| :--- | :--- |
 | name | A unique name for the appender to register. Only unique names can be registered per instance. |
 | class | The appender's class to register. We will create, init it and register it for you. |
 | properties | The structure of properties to configure this appender with. \(OPTIONAL\) |

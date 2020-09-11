@@ -21,7 +21,7 @@ component{
 Once you have this shell, you will create a `logBox` variable in the `variables` scope that must be a structure with the following keys:
 
 | Key | Description |
-| --- | --- |
+| :--- | :--- |
 | appenders | A structure where you will define appenders |
 | root | A structure where you will configure the root logger |
 | categories | A structure where you can define granular categories \(OPTIONAL\) |
@@ -37,7 +37,7 @@ Once you have this shell, you will create a `logBox` variable in the `variables`
 To define an appender you must define a struct with a key value which is the internal name of the appender. Each appender name must be unique. You configure each appender with the following keys:
 
 | Key | Description |
-| --- | --- |
+| :--- | :--- |
 | class | The class path of the appender |
 | properties | The properties struct for the appender \(OPTIONAL\) |
 | layout | The layout class path of the layout object to use \(OPTIONAL\) |
@@ -49,7 +49,7 @@ To define an appender you must define a struct with a key value which is the int
 To configure the root logger use the following keys:
 
 | Key | Description |
-| --- | --- |
+| :--- | :--- |
 | levelMin | The numerical or English word of the minimal logging level \(OPTIONAL, defaults to 0 \[FATAL\]\) |
 | levelMax | The numerical or English word of the maximum logging level \(OPTIONAL, defaults to 4 \[DEBUG\]\) |
 | appenders | A string list of the appenders to use for logging |
@@ -59,7 +59,7 @@ To configure the root logger use the following keys:
 To define categories you must define a struct with a key value which is the internal name of the category. Each category name must be unique. You configure each category with the following keys:
 
 | Key | Description |
-| --- | --- |
+| :--- | :--- |
 | levelMin | The numerical or English word of the minimal logging level \(OPTIONAL, defaults to 0 \[FATAL\]\) |
 | levelMax | The numerical or English word of the maximum logging level \(OPTIONAL, defaults to 4 \[DEBUG\]\) |
 | appenders | A string list of the appenders to use for logging \(OPTIONAL, defaults to \*\) |

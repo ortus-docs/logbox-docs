@@ -9,7 +9,7 @@ public void root([numeric levelMin="-1",] [numeric levelMax="4",] string appende
 ## Parameters
 
 | Name | Description |
-| --- | --- |
+| :--- | :--- |
 | levelMin | The default minimum log level for the root logger. \(OPTIONAL. Defaults to 0 \[FATAL\].\) |
 | levelMax | The default maximum log level for the root logger. \(OPTIONAL. Defaults to 4 \[DEBUG\].\) |
 | appenders | A list of appenders to configure the root logger with. Use `*` to add all registered appenders |

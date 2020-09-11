@@ -3,7 +3,7 @@
 An appender is an object that LogBox uses to log statements to a destination repository. All appenders act as destinations that can include: databases, JMS, files, consoles, sockets, etc. The appender has the responsibility of taking the logged message and persisting the message or sending the message to an external service. LogBox comes bundled with the following appenders that can be found in the package `coldbox.system.logging.appenders`:
 
 | Appender | Description |
-| --- | --- |
+| :--- | :--- |
 | CFAppender | Will deliver messages to the coldfusion logs. |
 | ConsoleAppender | Will deliver messages to the server's console via system.out |
 | DBAppender | Will deliver messages to a database table. It can auto create the table for you. |

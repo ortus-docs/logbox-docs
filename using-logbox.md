@@ -3,7 +3,7 @@
 Once you have created and configured the LogBox library, you can interact with it in order to get logger objects. The main methods you will use to interact with LogBox are the following, but I recommend you look at the CFC api \([http://www.coldbox.org/api](http://www.coldbox.org/api)\) in order to get a listing of all available methods.
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `LogBoxConfig getConfig()` | Get the config object registered |
 | `Logger getLogger(any category)` | Get a named logger object using a category string or the object you will log from |
 | `Logger getRootLogger()` | Get a reference to the root logger |

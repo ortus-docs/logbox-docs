@@ -7,13 +7,13 @@ Once you retrieve a logger object from LogBox, you are ready to start sending me
 Every logger has access to the following public variables:
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | `this.logLevels` | A reference to the `logbox.system.logging.LogLevels` class. |
 
 ## Utility Methods
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `boolean canLog(numeric level)` | Checks if this logger can log a certain type of severity. There is also a `can{severity}()` method for each severity level. |
 | `boolean can{severity}()` | Checks if this logger can log a certain type of severity. |
 | `void setCategory(category)` | Set the category name. |
@@ -26,7 +26,7 @@ Every logger has access to the following public variables:
 ## Logging Methods
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | `fatal(string message, [any extraInfo=""])` | Log a fatal message. |
 | `error(string message, [any extraInfo=""])` | Log an error message. |
 | `warn(string message, [any extraInfo=""])` | Log a warning message. |

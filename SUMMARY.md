@@ -16,7 +16,7 @@
   * [Appender](how-does-logbox-work/appender.md)
   * [Logger](how-does-logbox-work/logger/README.md)
     * [Logger Category Inheritance](how-does-logbox-work/logger/logger-category-inheritance.md)
-    * Security Levels
+    * [Security Levels](how-does-logbox-work/logger/security-levels.md)
     * [Dynamic Appenders](how-does-logbox-work/logger/dynamic-appenders.md)
   * [Layout](how-does-logbox-work/layout.md)
 * [Configuring LogBox](configuring-logbox/README.md)

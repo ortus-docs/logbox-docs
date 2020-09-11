@@ -1,7 +1,7 @@
 # EmailAppender
 
 | Property | Type | Required | Default | Description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | subject | string | true | --- | Get's pre-pended with the severity and category field. |
 | from | string | true | --- | The from email address |
 | to | string | true | --- | The to email\(s\) |

@@ -3,7 +3,7 @@
 Each logger object has several methods that you can use in order to interact with the logger's appenders. You can add, remove, clear or list the appenders on a specific logger instance. Below are the methods you can use in the logger class to interact with appenders:
 
 | Method | Return Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | hasAppenders\(\) | `Boolean` | Checks if the logger has any appenders attached to it |
 | getAppenders\(\) | `Struct` | Returns the map of registered appenders |
 | getAppender\(name\) | `Appender` | Return a named appender if it is registered in the logger |
