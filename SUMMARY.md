@@ -4,14 +4,10 @@
 
 ## Intro
 
-* [Introduction](intro/readme/README.md)
-  * [What's New With 5.4.0](intro/readme/whats-new-with-5.4.0.md)
-  * [What's New With 5.3.0](intro/readme/whats-new-with-5.3.0.md)
-  * [What's New With 5.0.0](intro/readme/whats-new-with-500.md)
-  * [What's New With 2.1.0](intro/readme/whats-new-with-2.1.0.md)
-  * [What's New With 2.0.0](intro/readme/whats-new-with-2.0.0.md)
-  * [About This Book](intro/readme/about-this-book.md)
-  * [Author](intro/readme/author.md)
+* [Release History](intro/release-history/README.md)
+  * [What's New With 6.0.0](intro/release-history/whats-new-with-6.0.0.md)
+* [About This Book](intro/about-this-book.md)
+* [Author](intro/author.md)
 
 ## Getting Started
 
