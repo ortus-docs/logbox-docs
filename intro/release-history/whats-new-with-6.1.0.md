@@ -2,6 +2,8 @@
 
 LogBox 6.1.0 is a minor release sporting fixes and a few minor updates to make your coding life easier 😂.
 
+## Release Notes
+
 {% tabs %}
 {% tab title="LogBox" %}
 ### Bugs
