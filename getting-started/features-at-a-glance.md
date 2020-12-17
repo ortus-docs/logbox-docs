@@ -1,6 +1,6 @@
 # Features at a Glance
 
-![](../.gitbook/assets/logbox-overview.png)
+![](../.gitbook/assets/LogBox-Overview.png)
 
 * LogBox can handle the inserting of logging and/or tracing statements in your application with a simple to use API while providing you the ability to manage logging behavior outside of your application code.
 * You can configure LogBox via a programmatic configuration file \(cfc\)
