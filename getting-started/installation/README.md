@@ -9,7 +9,7 @@ The best way to install LogBox is using **CommandBox CLI and package manager**.
 
 ## System Requirements
 
-* ColdFusion 11+
+* ColdFusion 2016+
 * Lucee 4.5+
 
 ## Manual Installation
