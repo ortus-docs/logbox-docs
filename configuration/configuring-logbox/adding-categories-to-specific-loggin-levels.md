@@ -16,4 +16,3 @@ config.fatal( "com.model.otherclass", "coldbox.system.whatever" );
 config.error( "com.model.otherclass", "coldbox.system.whatever" );
 config.off( "com.model.otherclass", "coldbox.system.whatever" );
 ```
-

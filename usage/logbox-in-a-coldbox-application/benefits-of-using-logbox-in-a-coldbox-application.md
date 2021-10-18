@@ -8,4 +8,3 @@ Just by building a ColdBox application, you get several key benefits when dealin
 * Every handler and interceptor already has a configured logger instance as a property called: `log`. So you have immediate access to it.
 * You can configure the logging of ColdBox on a per package level.
 * You get the power of ColdBox MVC.
-

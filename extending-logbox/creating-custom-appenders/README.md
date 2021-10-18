@@ -2,12 +2,12 @@
 
 In order to create your own appenders, you will have to create a cfc that extends `logbox.system.logging.AbstractAppender` and implement the following methods:
 
-| Method | Description |
-| :--- | :--- |
-| `init()` | Your constructor. Make sure to call `super.init( argumentCollection=arguments );` |
-| `logMessage()` | The method that is called when a message is received. |
-| `onRegistration()` | An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation. |
-| `onUnRegistration()` | An interceptor that fires when the appender is removed from a logger. |
+| Method               | Description                                                                                                                        |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `init()`             | Your constructor. Make sure to call `super.init( argumentCollection=arguments );`                                                  |
+| `logMessage()`       | The method that is called when a message is received.                                                                              |
+| `onRegistration()`   | An interceptor that fires when the appender gets created and initialized. It can be used for preparing the appender for operation. |
+| `onUnRegistration()` | An interceptor that fires when the appender is removed from a logger.                                                              |
 
 ## `init()`
 
@@ -167,4 +167,3 @@ These are great for starting or stopping your appenders if they so need to. Here
     </cfif>
 </cffunction>
 ```
-

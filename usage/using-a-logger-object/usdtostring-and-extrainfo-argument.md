@@ -1,4 +1,4 @@
-# $toString\(\) and ExtraInfo Argument
+# $toString() and ExtraInfo Argument
 
 When using any of the logging methods like `info()`, `debug()`, `warn()`, etc, they all take two arguments:
 
@@ -35,4 +35,3 @@ if( log.canDebug() ){
     log.debug( "User just got logged in right now!", user );
 }
 ```
-

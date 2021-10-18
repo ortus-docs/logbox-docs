@@ -8,13 +8,12 @@ LogBox 6.2.0 is a minor release with some bug fixes and some new nice features.
 {% tab title="LogBox" %}
 ### Bugs
 
-* \[[LOGBOX-56](https://ortussolutions.atlassian.net/browse/LOGBOX-56)\] - Missing line break on file appender control string
+* \[[LOGBOX-56](https://ortussolutions.atlassian.net/browse/LOGBOX-56)] - Missing line break on file appender control string
 
 ### New Features
 
-* \[[LOGBOX-57](https://ortussolutions.atlassian.net/browse/LOGBOX-57)\] - new `shutdown()` method to process graceful shutdown of LogBox
-* \[[LOGBOX-58](https://ortussolutions.atlassian.net/browse/LOGBOX-58)\] - New logbox config `onShutdown()` callback, which is called when LogBox has been shutdown
-* \[[LOGBOX-59](https://ortussolutions.atlassian.net/browse/LOGBOX-59)\] - New `shutdown()` method can be now used in appenders that will be called when LogBox is shutdown
+* \[[LOGBOX-57](https://ortussolutions.atlassian.net/browse/LOGBOX-57)] - new `shutdown() `method to process graceful shutdown of LogBox
+* \[[LOGBOX-58](https://ortussolutions.atlassian.net/browse/LOGBOX-58)] - New logbox config `onShutdown()` callback, which is called when LogBox has been shutdown
+* \[[LOGBOX-59](https://ortussolutions.atlassian.net/browse/LOGBOX-59)] - New `shutdown() `method can be now used in appenders that will be called when LogBox is shutdown
 {% endtab %}
 {% endtabs %}
-

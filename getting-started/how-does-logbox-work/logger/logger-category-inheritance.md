@@ -50,15 +50,15 @@ logger.info( "hello info" );
 logger.debug( "a cool debug message" );
 ```
 
-> **Information** All example code snippets are using a `getLogger( "categoryname" )` call instead of our preferred approach of `getLogger( this )` because we want to showcase which category we are talking about. Please take this into consideration.
+>  **Information** All example code snippets are using a `getLogger( "categoryname" )` call instead of our preferred approach of `getLogger( this )` because we want to showcase which category we are talking about. Please take this into consideration.
 
-| Category | Configured Levels | Assigned Levels | Appenders |
-| :--- | :--- | :--- | :--- |
-| root | FATAL-DEBUG | FATAL-DEBUG | console,file |
-| `coldbox.system` | INFO-DEBUG | INFO-DEBUG | console |
-| `coldbox.system.plugins` | ERROR | ERROR | \* |
-| `coldbox.system.interceptors.SES` | coldbox.system.interceptors.SES | INFO-DEBUG from `coldbox.system` | console from `coldbox.system` |
-| `coldbox.system.plugins.BeanFactory` | NONE | ERROR from `coldbox.system.plugins` | \* |
+| Category                             | Configured Levels               | Assigned Levels                     | Appenders                     |
+| ------------------------------------ | ------------------------------- | ----------------------------------- | ----------------------------- |
+| root                                 | FATAL-DEBUG                     | FATAL-DEBUG                         | console,file                  |
+| `coldbox.system`                     | INFO-DEBUG                      | INFO-DEBUG                          | console                       |
+| `coldbox.system.plugins`             | ERROR                           | ERROR                               | \*                            |
+| `coldbox.system.interceptors.SES`    | coldbox.system.interceptors.SES | INFO-DEBUG from `coldbox.system`    | console from `coldbox.system` |
+| `coldbox.system.plugins.BeanFactory` | NONE                            | ERROR from `coldbox.system.plugins` | \*                            |
 
 Since we requested the category: `coldbox.system.plugins.BeanFactory`, LogBox tries to locate it, but it has not been defined, so it takes off the last item in the category name. Now it will search for a category of: `coldbox.system.plugins` via pseudo-inheritance. However, now `coldbox.system.plugins` has been found and it has been configured to only listen to `error` messages. Therefore, the `coldbox.system.plugins.BeanFactory` logger can ONLY log error messages according to it's inherited category. So the `info()` message will be ignored, and the `error()` message will be sent to both the FileAppender and the ConsoleAppender!
 
@@ -66,10 +66,9 @@ The second logger is called `coldbox.system.interceptors.SES`, LogBox tries to m
 
 These examples should give you insight into category inheritance and the power they provide. You can easily turn toggle logging for entire packages with a single category definition. However, this is great only if you follow the dot notation conventions. Below is a sample generic chart sample:
 
-| Category | Configured Levels | Assigned Levels |
-| :--- | :--- | :--- |
-| root | FATAL-DEBUG | FATAL-DEBUG |
-| x | NONE | FATAL-DEBUG from `root` |
-| x.y | INFO | INFO |
-| x.y.z | NONE | INFO from `x.y` |
-
+| Category | Configured Levels | Assigned Levels         |
+| -------- | ----------------- | ----------------------- |
+| root     | FATAL-DEBUG       | FATAL-DEBUG             |
+| x        | NONE              | FATAL-DEBUG from `root` |
+| x.y      | INFO              | INFO                    |
+| x.y.z    | NONE              | INFO from `x.y`         |

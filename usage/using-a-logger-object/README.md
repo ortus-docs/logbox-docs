@@ -6,33 +6,33 @@ Once you retrieve a logger object from LogBox, you are ready to start sending me
 
 Every logger has access to the following public variables:
 
-| Property | Description |
-| :--- | :--- |
+| Property         | Description                                                 |
+| ---------------- | ----------------------------------------------------------- |
 | `this.logLevels` | A reference to the `logbox.system.logging.LogLevels` class. |
 
 ## Utility Methods
 
-| Method | Description |
-| :--- | :--- |
+| Method                          | Description                                                                                                                 |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | `boolean canLog(numeric level)` | Checks if this logger can log a certain type of severity. There is also a `can{severity}()` method for each severity level. |
-| `boolean can{severity}()` | Checks if this logger can log a certain type of severity. |
-| `void setCategory(category)` | Set the category name. |
-| `Logger getRootLogger()` | Get the root logger. |
-| `numeric getLevelMin()` | Get the minimum severity level. |
-| `void setLevelMin(level)` | Set the minimum severity level. |
-| `numeric getLevelMax()` | Get the maximum severity level. |
-| `void setLevelMax(level)` | Set the maximum severity level. |
+| `boolean can{severity}()`       | Checks if this logger can log a certain type of severity.                                                                   |
+| `void setCategory(category)`    | Set the category name.                                                                                                      |
+| `Logger getRootLogger()`        | Get the root logger.                                                                                                        |
+| `numeric getLevelMin()`         | Get the minimum severity level.                                                                                             |
+| `void setLevelMin(level)`       | Set the minimum severity level.                                                                                             |
+| `numeric getLevelMax()`         | Get the maximum severity level.                                                                                             |
+| `void setLevelMax(level)`       | Set the maximum severity level.                                                                                             |
 
 ## Logging Methods
 
-| Method | Description |
-| :--- | :--- |
-| `fatal(string message, [any extraInfo=""])` | Log a fatal message. |
-| `error(string message, [any extraInfo=""])` | Log an error message. |
-| `warn(string message, [any extraInfo=""])` | Log a warning message. |
-| `info(string message, [any extraInfo=""])` | Log an information message. |
-| `debug(string message, [any extraInfo=""])` | Log a debug message. |
-| `logMessage(string message, numeric severity, [any extraInfo=""])` | Log any kind of message. |
+| Method                                                             | Description                 |
+| ------------------------------------------------------------------ | --------------------------- |
+| `fatal(string message, [any extraInfo=""])`                        | Log a fatal message.        |
+| `error(string message, [any extraInfo=""])`                        | Log an error message.       |
+| `warn(string message, [any extraInfo=""])`                         | Log a warning message.      |
+| `info(string message, [any extraInfo=""])`                         | Log an information message. |
+| `debug(string message, [any extraInfo=""])`                        | Log a debug message.        |
+| `logMessage(string message, numeric severity, [any extraInfo=""])` | Log any kind of message.    |
 
 As you can probably tell, all logging methods take in a message string an a second argument called `extraInfo`. This `extraInfo` argument can be anything from a string, a structure, a query or whatever. This way you can send in a complex structure that the appenders will serialize into message form or log into the appropriate channel. Thus, `extraInfo` can be very handy when you are building your own custom appenders.
 
@@ -54,4 +54,3 @@ catch( any e ){
 ```
 
 I hope that by now you understand the basics of loggers and how easy it is to use them.
-

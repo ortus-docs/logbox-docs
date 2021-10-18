@@ -17,4 +17,3 @@ config = new logbox.system.logging.config.LogBoxConfig();
 // Create logbox instance
 logBox = new logbox.system.logging.LogBox( config );
 ```
-

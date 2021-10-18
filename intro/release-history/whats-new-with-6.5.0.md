@@ -1,5 +1,5 @@
 ---
-description: 'July 9th, 2021'
+description: July 9th, 2021
 ---
 
 # What's New With 6.5.0
@@ -17,4 +17,3 @@ description: 'July 9th, 2021'
 [LOGBOX-64](https://ortussolutions.atlassian.net/browse/LOGBOX-64) Ability to add new appenders after config has been registered already
 {% endtab %}
 {% endtabs %}
-

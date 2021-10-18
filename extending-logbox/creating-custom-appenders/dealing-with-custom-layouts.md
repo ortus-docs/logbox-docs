@@ -15,4 +15,3 @@ instance.out.println(entry);
 ```
 
 As you can see, all you need to do is have an `if` statement that checks whether the appender has a custom layout or not and then assign the return of the layout as your message to log.
-

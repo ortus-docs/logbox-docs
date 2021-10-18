@@ -2,22 +2,22 @@
 
 An appender is an object that LogBox uses to log statements to a destination repository. All appenders act as destinations that can include: databases, JMS, files, consoles, sockets, etc. The appender has the responsibility of taking the logged message and persisting the message or sending the message to an external service. LogBox comes bundled with the following appenders that can be found in the package `coldbox.system.logging.appenders`:
 
-| Appender | Description |
-| :--- | :--- |
-| CFAppender | Will deliver messages to the coldfusion logs. |
-| ConsoleAppender | Will deliver messages to the server's console via system.out |
-| DBAppender | Will deliver messages to a database table. It can auto create the table for you. |
-| DummyAppender | An endless void of nothingness |
-| EmailAppender | Will deliver messages to any email address. |
-| FileAppender | Will deliver messages a file. |
-| RollingFileAppender | A file appender that can do file rotation and archiving. |
-| ScopeAppender | Will deliver messages to any ColdFusion variable scope. |
-| SocketAppender | Will connect to any server socket and deliver messages. |
-| TracerAppender | Will deliver messages to the ColdFusion tag cftrace. |
+| Appender            | Description                                                                      |
+| ------------------- | -------------------------------------------------------------------------------- |
+| CFAppender          | Will deliver messages to the coldfusion logs.                                    |
+| ConsoleAppender     | Will deliver messages to the server's console via system.out                     |
+| DBAppender          | Will deliver messages to a database table. It can auto create the table for you. |
+| DummyAppender       | An endless void of nothingness                                                   |
+| EmailAppender       | Will deliver messages to any email address.                                      |
+| FileAppender        | Will deliver messages a file.                                                    |
+| RollingFileAppender | A file appender that can do file rotation and archiving.                         |
+| ScopeAppender       | Will deliver messages to any ColdFusion variable scope.                          |
+| SocketAppender      | Will connect to any server socket and deliver messages.                          |
+| TracerAppender      | Will deliver messages to the ColdFusion tag cftrace.                             |
 
 **Asynchronous Appenders**
 
-You may wish your logs to be asynchronous. You can do so by passing an `async` property in your configuration. \( This happens at the `logger` level and is available to all appenders out of the box, even ones that you create yourself!
+You may wish your logs to be asynchronous. You can do so by passing an `async` property in your configuration. ( This happens at the `logger` level and is available to all appenders out of the box, even ones that you create yourself!
 
 ```javascript
 // Any appender can be asynchronous!
@@ -99,4 +99,3 @@ function configure(){
 ```
 
 Another feature of a LogBox appender is that you can `extend` them or create new ones simply by leveraging the LogBox API. To customize LogBox appenders for your own unique needs you would simply extend the core appender class: `coldbox.system.logging.AbstractAppender` and implementing the `init()` and `logMessage()` methods. Extending LogBox will be reviewed in greater detail over the next few sections.
-

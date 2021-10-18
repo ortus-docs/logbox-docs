@@ -8,14 +8,14 @@ public void appender( string name, string class, [struct properties={},] [string
 
 ## Parameters:
 
-| Name | Description |
-| :--- | :--- |
-| name | A unique name for the appender to register. Only unique names can be registered per instance. |
-| class | The appender's class to register. We will create, init it and register it for you. |
-| properties | The structure of properties to configure this appender with. \(OPTIONAL\) |
-| layout | The layout class path to use in this appender for custom message rendering. \(OPTIONAL\) |
-| levelMin | The numerical or English word of the minimal logging level \(OPTIONAL, defaults to 0 \[FATAL\].\) |
-| levelMax | The numerical or English word of the maximum logging level \(OPTIONAL, defaults to 4 \[DEBUG\].\) |
+| Name       | Description                                                                                    |
+| ---------- | ---------------------------------------------------------------------------------------------- |
+| name       | A unique name for the appender to register. Only unique names can be registered per instance.  |
+| class      | The appender's class to register. We will create, init it and register it for you.             |
+| properties | The structure of properties to configure this appender with. (OPTIONAL)                        |
+| layout     | The layout class path to use in this appender for custom message rendering. (OPTIONAL)         |
+| levelMin   | The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 \[FATAL].) |
+| levelMax   | The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 \[DEBUG].) |
 
 ## Examples
 
@@ -43,4 +43,3 @@ config.appender(
     layout="model.logging.MyFileLayout"
 );
 ```
-

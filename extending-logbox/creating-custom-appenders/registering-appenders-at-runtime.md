@@ -7,4 +7,3 @@ registerAppender(name, class, [properties={},] [layout="",] [levelMin=0,] [level
 ```
 
 > **Info** Please note that registering dynamic appenders at runtime is tricky as some objecs might already have references to some appenders. We recommend registering appenders at configuration load or when the application starts up.
-

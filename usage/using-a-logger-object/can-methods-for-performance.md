@@ -15,4 +15,3 @@ if( log.canDebug() ){
 ```
 
 This way, the logger determines if it can send debug log messages, and only **IF IT CAN** does it. This is faster and cleaner, but you will type more. Sorry!
-

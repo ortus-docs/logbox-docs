@@ -10,4 +10,3 @@ You can easily create a custom layout object by creating a cfc that extends our 
 ```
 
 All you need to do is inspect the logging event and create your very own message and then return it back. That's it! You thought there was more?
-

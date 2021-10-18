@@ -6,7 +6,7 @@ description: >-
 
 # Introduction
 
-```text
+```
  __        ______     _______ .______     ______   ___   ___ 
 |  |      /  __  \   /  _____||   _  \   /  __  \  \  \ /  / 
 |  |     |  |  |  | |  |  __  |  |_)  | |  |  |  |  \  V  /  
@@ -17,26 +17,26 @@ description: >-
 
 ## LogBox Manual - Version 6.x
 
-![LogBox](.gitbook/assets/logbox_300.png)
+![LogBox](.gitbook/assets/LogBox\_300.png)
 
-LogBox is an enterprise ColdFusion \(CFML\) logging library designed to give you flexibility, simplicity and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries and allows you to easily build upon it's logging framework in order to meet any logging or reporting needs your applications has. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
+LogBox is an enterprise ColdFusion (CFML) logging library designed to give you flexibility, simplicity and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries and allows you to easily build upon it's logging framework in order to meet any logging or reporting needs your applications has. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
 
 Almost every application needs logging and/or tracing capabilities and we have developed LogBox to satisfy these needs. Although you should take care not to over-use logging as it can slow down an application, LogBox offers you the capabilities to filter out or cancel logging noise a-la-carte. LogBox was inspired by the original logging capabilities in ColdBox and in the [Log4j](http://logging.apache.org/log4j/2.x/) project.
 
-**LogBox is standalone framework for ColdFusion \(CFML\) applications and it is also bundled with the ColdBox Platform.**
+**LogBox is standalone framework for ColdFusion (CFML) applications and it is also bundled with the ColdBox Platform.**
 
 ## Versioning
 
 LogBox is maintained under the [Semantic Versioning](https://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
 
-```text
+```
 <major>.<minor>.<patch>
 ```
 
 And constructed with the following guidelines:
 
-* Breaking backward compatibility bumps the major \(and resets the minor and patch\)
-* New additions without breaking backward compatibility bumps the minor \(and resets the patch\)
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
 ## License
@@ -48,11 +48,11 @@ The ColdBox Platform, LogBox is open source and licensed under the [Apache 2](ht
 
 ## Discussion & Help
 
-The LogBox help and discussion group can be found here: [https://groups.google.com/forum/\#!forum/coldbox](https://groups.google.com/forum/#!forum/coldbox)
+The LogBox help and discussion group can be found here: [https://groups.google.com/forum/#!forum/coldbox](https://groups.google.com/forum/#!forum/coldbox)
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :\) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
+We all make mistakes from time to time :) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 
 ### Jira Issue Tracking
 
@@ -63,7 +63,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%281%29.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
 
 ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
@@ -90,4 +90,3 @@ ColdBox is a professional open source software backed by [Ortus Solutions, Corp]
 Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
-

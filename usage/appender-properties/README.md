@@ -5,4 +5,3 @@ As we mentioned before, LogBox ships with over 10 different appenders for your l
 ## Async Property
 
 All appenders have an `async` boolean property by default inherited from LogBox. This will tell LogBox to log asynchronously in a separate thread. By default all logging is done **synchronously**
-

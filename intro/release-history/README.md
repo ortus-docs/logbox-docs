@@ -8,4 +8,3 @@ In this section you will find the release notes for each version we release unde
 * Version 3.0 - March 2011
 * Version 2.0 - April 2007
 * Version 1.0 - June 2006
-

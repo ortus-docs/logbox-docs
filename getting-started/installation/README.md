@@ -4,7 +4,7 @@ LogBox can be downloaded as a standalone framework or it is included with the la
 
 The best way to install LogBox is using **CommandBox CLI and package manager**.
 
-* [Download LogBox Standalone](https://www.coldbox.org/download)
+* [Download LogBox Standalone](https://www.forgebox.io/view/testbox#versions)
 * [API Docs](https://apidocs.ortussolutions.com/logbox/5.0.0/index.html)
 
 ## System Requirements
@@ -50,4 +50,3 @@ box install logbox@be
 * [LogBox Planning Board](https://ortussolutions.atlassian.net/browse/LOGBOX)
 * [Log4J](http://logging.apache.org/log4j/2.x/)
 * [LogStash](http://logstash.net)
-
