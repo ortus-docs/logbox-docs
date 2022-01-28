@@ -5,6 +5,7 @@
 ## Intro
 
 * [Release History](intro/release-history/README.md)
+  * [What's New With 6.6.0](intro/release-history/whats-new-with-6.6.0.md)
   * [What's New With 6.5.0](intro/release-history/whats-new-with-6.5.0.md)
   * [What's New With 6.2.0](intro/release-history/whats-new-with-6.2.0.md)
   * [What's New With 6.1.0](intro/release-history/whats-new-with-6.1.0.md)
@@ -41,7 +42,7 @@
 * [Using LogBox](usage/using-logbox.md)
 * [Using a Logger Object](usage/using-a-logger-object/README.md)
   * [Can Methods For Performance](usage/using-a-logger-object/can-methods-for-performance.md)
-  * [$toString\(\) and ExtraInfo Argument](usage/using-a-logger-object/usdtostring-and-extrainfo-argument.md)
+  * [$toString() and ExtraInfo Argument](usage/using-a-logger-object/usdtostring-and-extrainfo-argument.md)
 * [Appender Properties](usage/appender-properties/README.md)
   * [CFAppender](usage/appender-properties/cfappender.md)
   * [ConsoleAppender](usage/appender-properties/consoleappender.md)
@@ -68,4 +69,3 @@
   * [Registering Appenders at Runtime](extending-logbox/creating-custom-appenders/registering-appenders-at-runtime.md)
 * [Creating a Custom Layout](extending-logbox/creating-a-custom-layout/README.md)
   * [Instance Members](extending-logbox/creating-a-custom-layout/instance-members.md)
-
