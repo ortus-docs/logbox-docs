@@ -5,6 +5,7 @@
 ## Intro
 
 * [Release History](intro/release-history/README.md)
+  * [What's New With 6.7.0](intro/release-history/whats-new-with-6.7.0.md)
   * [What's New With 6.6.0](intro/release-history/whats-new-with-6.6.0.md)
   * [What's New With 6.5.0](intro/release-history/whats-new-with-6.5.0.md)
   * [What's New With 6.2.0](intro/release-history/whats-new-with-6.2.0.md)
@@ -62,7 +63,7 @@
 
 ## Extending LogBox
 
-* [Creating Custom  Appenders](extending-logbox/creating-custom-appenders/README.md)
+* [Creating Custom Appenders](extending-logbox/creating-custom-appenders/README.md)
   * [Helper Methods](extending-logbox/creating-custom-appenders/helper-methods.md)
   * [Instance Members](extending-logbox/creating-custom-appenders/instance-members.md)
   * [Dealing With Custom Layouts](extending-logbox/creating-custom-appenders/dealing-with-custom-layouts.md)

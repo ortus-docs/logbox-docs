@@ -4,7 +4,7 @@
 
 ![](../.gitbook/assets/luismajano.jpg)
 
-Luis Majano is a Computer Engineer with over 15 years of software development and systems architecture experience. He was born in [San Salvador, El Salvador](http://en.wikipedia.org/wiki/El_Salvador) in the late 70’s, during a period of economical instability and civil war. He lived in El Salvador until 1995 and then moved to Miami, Florida where he completed his Bachelors of Science in Computer Engineering at [Florida International University](http://fiu.edu). Luis resides in The Woodlands, Texas with his beautiful wife Veronica, baby girl Alexia and baby boy Lucas!
+Luis Majano is a Computer Engineer with over 15 years of software development and systems architecture experience. He was born in [San Salvador, El Salvador](http://en.wikipedia.org/wiki/El\_Salvador) in the late 70’s, during a period of economical instability and civil war. He lived in El Salvador until 1995 and then moved to Miami, Florida where he completed his Bachelors of Science in Computer Engineering at [Florida International University](http://fiu.edu). Luis resides in The Woodlands, Texas with his beautiful wife Veronica, baby girl Alexia and baby boy Lucas!
 
 He is the CEO of [Ortus Solutions](http://www.ortussolutions.com), a consulting firm specializing in web development, ColdFusion (CFML), Java development and all open source professional services under the ColdBox and ContentBox stack. He is the creator of ColdBox, ContentBox, WireBox, MockBox, LogBox and anything “BOX”, and contributes to many open source ColdFusion projects. He is also the Adobe ColdFusion user group manager for the [Inland Empire](http://www.iecfug.org). You can read his blog at [www.luismajano.com](http://www.luismajano.com)
 
@@ -24,7 +24,7 @@ Luis has a passion for Jesus, tennis, golf, volleyball and anything electronic. 
 
 ### Jorge Emilio Reyes Bendeck
 
-Jorge is an Industrial and Systems Engineer born in El Salvador. After finishing his Bachelor studies at the Monterrey Institute of Technology and Higher Education [ITESM](http://www.itesm.mx/wps/wcm/connect/ITESM/Tecnologico+de+Monterrey/English), Mexico, he went back to his home country where he worked as the COO of[ Industrias Bendek S.A.](http://www.si-ham.com). In 2012 he left El Salvador and moved to Switzerland in pursuit of the love of his life. He married her and today he resides in Basel with his lovely wife Marta and their daughter Sofía.
+Jorge is an Industrial and Systems Engineer born in El Salvador. After finishing his Bachelor studies at the Monterrey Institute of Technology and Higher Education [ITESM](http://www.itesm.mx/wps/wcm/connect/ITESM/Tecnologico+de+Monterrey/English), Mexico, he went back to his home country where he worked as the COO of[ Industrias Bendek S.A.](http://www.si-ham.com/). In 2012 he left El Salvador and moved to Switzerland in pursuit of the love of his life. He married her and today he resides in Basel with his lovely wife Marta and their daughter Sofía.
 
 Jorge started working as project manager and business developer at Ortus Solutions, Corp. in 2013, . At Ortus he fell in love with software development and now enjoys taking part on software development projects and software documentation! He is a fellow Christian who loves to play the guitar, worship and rejoice in the Lord!
 
