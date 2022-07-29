@@ -16,11 +16,11 @@ Below you can see the most common usage of this dependency DSL:
 property name="logBox" inject="logbox";
 
 //  Root Logger
-property name="logger" type="logbox:root";
+property name="logger" inject="logbox:root";
 
 //  Named Category
-property name="logger" type="logbox:logger:com.api.model";
+property name="logger" inject="logbox:logger:com.api.model";
 
 //  Category eq to ClassPath
-property name="logger" type="logbox:logger:{this}";
+property name="logger" inject="logbox:logger:{this}";
 ```
