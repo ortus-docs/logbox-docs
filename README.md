@@ -55,7 +55,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
 
-ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
+LogBox is a professional open source library supported by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) If you are interested in support please consider our [Ninja Subscription Support](https://www.ortussolutions.com/services/support) or if you need consulting please purchase on of our [Consulting Plans](https://www.ortussolutions.com/services/support) Here are some areas that we can assist you with:
 
 * Custom Development
 * Professional Support & Mentoring
