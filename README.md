@@ -17,7 +17,7 @@ description: >-
 
 ## LogBox Manual - Version 6.x
 
-![LogBox](.gitbook/assets/LogBox\_300.png)
+![LogBox](.gitbook/assets/logbox\_300.png)
 
 LogBox is an enterprise ColdFusion (CFML) logging library designed to give you flexibility, simplicity and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries and allows you to easily build upon it's logging framework in order to meet any logging or reporting needs your applications has. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
 
@@ -63,7 +63,7 @@ We all make mistakes from time to time :) So why not let us know about it and he
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
+![Ortus Solutions, Corp](<.gitbook/assets/ortussolutions\_button (1).png>)
 
 ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
