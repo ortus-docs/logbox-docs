@@ -1,11 +1,13 @@
 # DBAppender
 
-| Property   | Type    | Required | Default | Description                                                          |
-| ---------- | ------- | -------- | ------- | -------------------------------------------------------------------- |
-| dsn        | string  | true     | ---     | The dsn to use for logging                                           |
-| table      | string  | true     | ---     | The table name to use for logging                                    |
-| columnMap  | struct  | false    | ---     | A column map for aliasing columns. (Optional)                        |
-| autocreate | boolean | false    | false   | if true, then we will create the table. Defaults to false (Optional) |
+| Property     | Type    | Required | Default | Description                                                                              |
+| ------------ | ------- | -------- | ------- | ---------------------------------------------------------------------------------------- |
+| dsn          | string  | true     | ---     | The dsn to use for logging                                                               |
+| table        | string  | true     | ---     | The table name to use for logging                                                        |
+| columnMap    | struct  | false    | ---     | A column map for aliasing columns. (Optional)                                            |
+| autocreate   | boolean | false    | false   | if true, then we will create the table. Defaults to false (Optional)                     |
+| rotate       | boolean | false    | true    | If true, delete records older than `rotationDays`. Defaults to true (Optional)           |
+| rotationDays | integer | false    | 30      | If `rotate` is true, delete records older than `rotationDays`. Defaults to 30 (Optional) |
 
 The columns needed or created in the table are
 
