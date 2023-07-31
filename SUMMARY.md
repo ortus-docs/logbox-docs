@@ -34,7 +34,7 @@
 * [Configuring LogBox](configuration/configuring-logbox/README.md)
   * [LogBox DSL](configuration/configuring-logbox/logbox-dsl.md)
   * [Adding Appenders](configuration/configuring-logbox/adding-appenders.md)
-  * [Adding Categories to Specific Loggin Levels](configuration/configuring-logbox/adding-categories-to-specific-loggin-levels.md)
+  * [Adding Categories to Specific Logging Levels](configuration/configuring-logbox/adding-categories-to-specific-logging-levels.md)
   * [Adding Categories Granularly](configuration/configuring-logbox/adding-categories-granularly.md)
   * [Configuring The Root Logger](configuration/configuring-logbox/configuring-the-root-logger.md)
 
