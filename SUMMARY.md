@@ -1,18 +1,13 @@
 # Table of contents
 
 * [Introduction](README.md)
-
-## Intro
-
-* [Release History](intro/release-history/README.md)
-  * [What's New With 6.7.0](intro/release-history/whats-new-with-6.7.0.md)
-  * [What's New With 6.6.0](intro/release-history/whats-new-with-6.6.0.md)
-  * [What's New With 6.5.0](intro/release-history/whats-new-with-6.5.0.md)
-  * [What's New With 6.2.0](intro/release-history/whats-new-with-6.2.0.md)
-  * [What's New With 6.1.0](intro/release-history/whats-new-with-6.1.0.md)
-  * [What's New With 6.0.0](intro/release-history/whats-new-with-6.0.0.md)
-* [About This Book](intro/about-this-book/README.md)
-  * [Author](intro/about-this-book/author.md)
+  * [Contribution Guide](readme/contribution-guide.md)
+  * [Release History](readme/release-history/README.md)
+    * [What's New With 7.1.0](readme/release-history/whats-new-with-7.1.0.md)
+    * [What's New With 7.0.0](readme/release-history/whats-new-with-7.0.0.md)
+  * [Upgrading to LogBox 7](readme/upgrading-to-logbox-7.md)
+  * [About This Book](readme/about-this-book/README.md)
+    * [Author](readme/about-this-book/author.md)
 
 ## Getting Started
 
