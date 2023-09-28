@@ -37,8 +37,8 @@
 
 * [Using LogBox](usage/using-logbox.md)
 * [Using a Logger Object](usage/using-a-logger-object/README.md)
-  * [Can Methods For Performance](usage/using-a-logger-object/can-methods-for-performance.md)
-  * [$toString() and ExtraInfo Argument](usage/using-a-logger-object/usdtostring-and-extrainfo-argument.md)
+  * [When To Log](usage/using-a-logger-object/can-methods-for-performance.md)
+  * [ExtraInfo Serialization](usage/using-a-logger-object/usdtostring-and-extrainfo-argument.md)
 * [Appender Properties](usage/appender-properties/README.md)
   * [CFAppender](usage/appender-properties/cfappender.md)
   * [ConsoleAppender](usage/appender-properties/consoleappender.md)
