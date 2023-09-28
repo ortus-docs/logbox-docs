@@ -1,10 +1,18 @@
 # How Does LogBox Work?
 
-LogBox has four main components:
+![](<../../.gitbook/assets/image (3).png>)
 
-1. LogBox
-2. Logger
-3. Appenders
-4. Layouts.&#x20;
+LogBox has five main components:
 
-These four (4) components work in unison to deliver the logging and tracing of messages and to control how they are logged. You will mostly interact with the Logger component as it will send your statements to the Appenders you have configured. Users can extend LogBox and build their own appenders and layouts.
+1. **LogBox**
+   1. The central library that stores your loggers, appenders, categories, and configuration
+2. **Logger**
+   1. The class in charge of sending messages to the appropriate destinations according to the category it has been defined with.
+3. **Categories**
+   1. Each Logger is created with a unique category that usually maps to the classpath of the CFC that uses the logger.
+4. **Appenders**
+   1. Components that receive log events and send them for storage in their implementations: files, consoles, etc.
+5. **Layouts**
+   1. The appenders will send the messages to their destinations using a specified format.  This is called the layout of the message. LogBox comes with default layouts, but you can build your own.
+
+These components work in unison to deliver messages' logging and tracing and control how they are logged. You will primarily interact with the **Logger** component as it will send your statements to the **Appenders** you have configured. Users can extend LogBox and build custom appenders and layouts.
