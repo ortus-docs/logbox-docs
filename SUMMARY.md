@@ -3,6 +3,7 @@
 * [Introduction](README.md)
   * [Contribution Guide](readme/contribution-guide.md)
   * [Release History](readme/release-history/README.md)
+    * [What's New With 7.2.0](readme/release-history/whats-new-with-7.2.0.md)
     * [What's New With 7.1.0](readme/release-history/whats-new-with-7.1.0.md)
     * [What's New With 7.0.0](readme/release-history/whats-new-with-7.0.0.md)
   * [Upgrading to LogBox 7](readme/upgrading-to-logbox-7.md)
