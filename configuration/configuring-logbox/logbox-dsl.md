@@ -92,7 +92,7 @@ root : {
 }
 ```
 
-<table data-header-hidden><thead><tr><th width="148">Key</th><th>Description</th></tr></thead><tbody><tr><td>Key</td><td>Description</td></tr><tr><td><code>levelMin</code></td><td>The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])</td></tr><tr><td><code>levelMax</code></td><td>The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])</td></tr><tr><td><code>appenders</code></td><td>A string list of the appenders to use for logging  or the <code>*</code> convention for all appenders.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="148">Key</th><th>Description</th></tr></thead><tbody><tr><td>Key</td><td>Description</td></tr><tr><td><code>levelMin</code></td><td>The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])</td></tr><tr><td><code>levelMax</code></td><td>The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])</td></tr><tr><td><code>appenders</code></td><td>A string list of the appenders to use for logging  or the <code>*</code> convention for all appenders.</td></tr><tr><td><code>exclude</code></td><td>A string list of appenders to exclude from logging.</td></tr></tbody></table>
 
 ### Categories
 
@@ -106,7 +106,7 @@ categories={
 
 To define categories, you define a struct with a key value, which is the internal name of the category. **Each category name must be unique**,. You configure each category with the following keys:
 
-<table data-header-hidden><thead><tr><th width="152">Key</th><th>Description</th></tr></thead><tbody><tr><td>Key</td><td>Description</td></tr><tr><td><code>levelMin</code></td><td>The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])</td></tr><tr><td><code>levelMax</code></td><td>The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])</td></tr><tr><td><code>appenders</code></td><td>A string list of the appenders to use for logging (OPTIONAL, defaults to *)</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="152">Key</th><th>Description</th></tr></thead><tbody><tr><td>Key</td><td>Description</td></tr><tr><td><code>levelMin</code></td><td>The numerical or English word of the minimal logging level (OPTIONAL, defaults to 0 [FATAL])</td></tr><tr><td><code>levelMax</code></td><td>The numerical or English word of the maximum logging level (OPTIONAL, defaults to 4 [DEBUG])</td></tr><tr><td><code>appenders</code></td><td>A string list of the appenders to use for logging (OPTIONAL, defaults to *)</td></tr><tr><td><code>exclude</code></td><td>A string list of appenders to exclude from logging.</td></tr></tbody></table>
 
 As you might notice, the names of the keys on all the structures match 100% to the programmatic methods you can also use to configure logBox. So, when in doubt, refer back to the argument names.
 
