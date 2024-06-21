@@ -132,7 +132,7 @@ logBox = {
     categories={
         "coldbox.system" = { levelMin="FATAL", levelMax="INFO", appenders="*" },
         "model.security" = { levelMax="DEBUG", appenders="console" }
-    }
+    },
     // Implicit categories
     debug = [ "coldbox.system.interceptors"  ],
     info  = [ "model.class", "model2.class2" ],
