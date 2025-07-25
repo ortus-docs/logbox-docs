@@ -2,8 +2,8 @@
 
 Logbox
 
-[Logger Category Inheritance](https://logbox.ortusbooks.com/content/how\_does\_logbox\_work/logger\_category\_inheritance.html)
+[Logger Category Inheritance](logger-category-inheritance.md)
 
-[Security Levels](./)
+[Security Levels](security-levels.md)
 
-[Dynamic Appenders](https://logbox.ortusbooks.com/content/how\_does\_logbox\_work/dynamic\_appenders.html)
+[Dynamic Appenders](dynamic-appenders.md)
