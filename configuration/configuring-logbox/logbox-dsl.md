@@ -16,13 +16,13 @@ component{
 
     function configure(){
         logBox = {
-            
+
             appenders : {},
-            
+
             root : {},
-            
+
             categories : {},
-            
+
             fatal : [],
             error : [],
             warn  : [],
@@ -47,19 +47,19 @@ Root level configuration keys.
 appenders : {
 
     console: { class : "ConsoleAppender" },
-    
+
     jsonConsole : {
         class : "ConsoleAppender",
         layout : "models.JSONLayout",
         levelMin : 0,
         levelMax : 4
     },
-    
-    errorLog: { 
+
+    errorLog: {
         class: "FileAppender",
         properties: {
             filePath : "/logs",
-            fileName : "appname-errors"     
+            fileName : "appname-errors"
         },
         levelMin : "FATAL",
         levelMax : "ERROR"
