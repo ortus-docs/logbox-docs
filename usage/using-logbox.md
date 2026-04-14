@@ -11,6 +11,8 @@ Once you have created and configured the LogBox library, you can interact with i
 | `string getCurrentAppenders()`          | Get a list of currently registered appenders                                      |
 | `string getCurrentLoggers()`            | Get a list of currently instantiated loggers                                      |
 | `void configure( LogBoxConfig config )` | Dynamically re-configure the LogBox library                                       |
+| `LogBox registerAppender( name, class, [properties], [layout], [levelMin], [levelMax] )` | Register a new appender into the running LogBox registry at runtime. Returns `LogBox` (fluent). |
+| `void shutdown()` | Gracefully shut down LogBox — calls `onShutdown()` on the config, shuts down all registered appenders and the async task executor. |
 
 The two most important methods are `getRootLogger() & getLogger()`, which you will use to get the root or named logger objects.
 

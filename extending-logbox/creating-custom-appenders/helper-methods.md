@@ -27,3 +27,19 @@ The abstract appender also has various cool methods that you can use when buildi
 | --------------------------- | --------------------------------------------------------------- |
 | `any getCustomLayout()`     | Get the custom layout object if defined.                        |
 | `boolean hasCustomLayout()` | Checks if the custom layout object is defined in this appender. |
+
+## Level Methods
+
+| Method | Description |
+| ------ | ----------- |
+| `boolean canLog( numeric level )` | Returns `true` if the given numeric level falls within this appender's configured `levelMin`–`levelMax` range. Use this to short-circuit expensive log preparation before calling `logMessage()`. |
+
+## Output and Locking Helpers
+
+These private helpers are available inside your appender implementation:
+
+| Method | Description |
+| ------ | ----------- |
+| `lock( required body, type = "exclusive" )` | Executes the passed closure/lambda under a named CFML lock scoped to this appender's hash and name. `type` may be `"exclusive"` (default) or `"readonly"`. Honors the `lockTimeout` property. |
+| `out( required message )` | Writes a message to the JVM **standard output** stream (`System.out`). Useful for diagnostic output during appender development. |
+| `err( required message )` | Writes a message to the JVM **standard error** stream (`System.err`). Useful for surfacing low-level appender errors without triggering further logging. |

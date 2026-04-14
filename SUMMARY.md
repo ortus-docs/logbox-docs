@@ -64,6 +64,7 @@
   * [Helper Methods](extending-logbox/creating-custom-appenders/helper-methods.md)
   * [Instance Members](extending-logbox/creating-custom-appenders/instance-members.md)
   * [Dealing With Custom Layouts](extending-logbox/creating-custom-appenders/dealing-with-custom-layouts.md)
+  * [Async Appenders](extending-logbox/creating-custom-appenders/async-appenders.md)
   * [Registering Appenders at Runtime](extending-logbox/creating-custom-appenders/registering-appenders-at-runtime.md)
 * [Creating a Custom Layout](extending-logbox/creating-a-custom-layout/README.md)
   * [Instance Members](extending-logbox/creating-a-custom-layout/instance-members.md)
