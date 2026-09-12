@@ -23,6 +23,38 @@ Configuration can be done in the following ways:
 
 This is the default configuration when LogBox is created with no config:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+{% code lineNumbers="true" %}
+```boxlang
+class {
+
+  /**
+   *  Configure logBox
+   */
+  function configure(){
+    logBox = {
+	// Define Appenders
+	appenders : { 
+		console : { class : "ConsoleAppender" } 
+	},
+	
+	// Root Logger
+	root : { 
+		levelmax : "INFO", 
+		appenders : "*" 
+	}
+    };
+  }
+
+}
+
+// Instantiate it
+application.logbox = new logbox.system.logging.LogBox();
+```
+{% endcode %}
+{% endtab %}
+{% tab title="CFML" %}
 {% code lineNumbers="true" %}
 ```cfscript
 component {
@@ -51,6 +83,8 @@ component {
 application.logbox = new logbox.system.logging.LogBox();
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -58,6 +92,49 @@ application.logbox = new logbox.system.logging.LogBox();
 
 You can create a CFC with a single `configure` method with the LogBox configuration in a variable called `logbox` using the LogBox DSL.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class output="false" hint="A LogBox Configuration Data Object" {
+
+/**
+ * Configure LogBox, that's it!
+ */
+function configure(){
+    logBox = {
+	// Define Appenders
+	appenders : {
+		coldboxTracer : {
+			class      : "ConsoleAppender",
+			layout     : "coldbox.tests.specs.logging.MockLayout",
+			properties : { name : "awesome" }
+		}
+	},
+	// Root Logger
+	root       : { levelmax : "INFO", levelMin : 0, appenders : "*" },
+	// Categories
+	categories : {
+		"coldbox.system"              : { levelMax : "INFO" },
+		"coldbox.system.interceptors" : { levelMin : 0, levelMax : "DEBUG", appenders : "*" },
+		"hello.model"                 : { levelMax : 4, appenders : "*" }
+	},
+	debug : [ "coldbox.system", "models.system" ],
+	info  : [ "hello.model", "yes.wow.wow" ],
+	warn  : [ "hello.model", "yes.wow.wow" ],
+	error : [ "hello.model", "yes.wow.wow" ],
+	fatal : [ "hello.model", "yes.wow.wow" ],
+	OFF   : [ "hello.model", "yes.wow.wow" ]
+    };
+}
+
+}
+
+
+// Instantiate it by passing the path to this CFC
+application.logbox = new logbox.system.logging.LogBox( "config.LogBoxConfig" );
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component output="false" hint="A LogBox Configuration Data Object" {
 
@@ -97,6 +174,8 @@ function configure(){
 // Instantiate it by passing the path to this CFC
 application.logbox = new logbox.system.logging.LogBox( "config.LogBoxConfig" );
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
