@@ -7,7 +7,8 @@ public void category(
     string name,
     [numeric levelMin='0',]
     [numeric levelMax='4',]
-    [string appenders='*']
+    [string appenders='*'],
+    [string exclude='']
 )
 ```
 
@@ -19,6 +20,7 @@ public void category(
 | levelMin  | The default min log level for this category. (OPTIONAL. Defaults to 0 \[FATAL].)                                                                                               |
 | levelMax  | The max default log level for this category. (OPTIONAL. Defaults to 4 \[DEBUG].)                                                                                               |
 | appenders | A list of appender names to configure this category with else it will use all the appenders in the root logger. You can also use \* to add all registered apenders. (OPTIONAL) |
+| exclude   | A list of appender names to exclude from the `appenders` list above. (OPTIONAL. Defaults to empty.)                                                                            |
 
 ## Example
 

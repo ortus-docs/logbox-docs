@@ -136,6 +136,8 @@ As you can see it is a very simple method that receives a LogBox logging event o
 * `severity`
 * `extraInfo`
 
+It also exposes a helper method, `getExtraInfoAsString()`, which returns the `extraInfo` value already serialized to a string (following the same `$toString()`/exception/JSON/XML rules described in [ExtraInfo Serialization](../../usage/using-a-logger-object/usdtostring-and-extrainfo-argument.md)), so appenders and layouts don't have to duplicate that serialization logic themselves.
+
 You can then use this logging event object to log to whatever destination you want. Here is a snippet from a scope appender:
 
 {% tabs %}

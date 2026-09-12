@@ -22,6 +22,8 @@ Every logger has access to the following public variables:
 | `void setLevelMin(level)`       | Set the minimum severity level.                                                                                             |
 | `numeric getLevelMax()`         | Get the maximum severity level.                                                                                             |
 | `void setLevelMax(level)`       | Set the maximum severity level.                                                                                             |
+| `boolean getSerializeExtraInfo()` | Get whether complex objects passed as `extraInfo` are automatically serialized to a string representation. Defaults to `true`. |
+| `void setSerializeExtraInfo(boolean)` | Set whether complex objects passed as `extraInfo` should be automatically serialized to a string representation.     |
 
 ## Logging Methods
 
