@@ -2,7 +2,7 @@
 
 LogBox comes pre-configured for operation with very basic logging.  However, you can customize it to your fancy using different configuration strategies using the programmatic configuration object or the [LogBox Config DSL](logbox-dsl.md).
 
-When you are in a ColdBox application, you will have a `logbox` structure in your `ColdBox.cfc` already that you can use, or you can create a portable CFC as well and place it in `config/LogBox.cfc`
+When you are in a ColdBox application, you will have a `logbox` structure in your `ColdBox.cfc` already that you can use, or you can create a portable class as well and place it in `config/LogBox.cfc`
 
 {% hint style="success" %}
 The cool thing about this LogBox DSL is that it is the same whether you are using LogBox in ColdBox applications or any other framework or non-framework ColdFusion application.&#x20;
@@ -11,7 +11,7 @@ The cool thing about this LogBox DSL is that it is the same whether you are usin
 Configuration can be done in the following ways:
 
 1. **No configuration:** Uses the _default configuration_ shown below
-2. **Portable CFC:** Creating a portable data CFC using the LogBox DSL in a `configure()` method
+2. **Portable Class:** Creating a portable data class using the LogBox DSL in a `configure()` method
 3. **LogBoxConfig:** Creating the `LogBoxConfig` object and interacting with its methods programmatically
 4. **LogBox DSL Struct:** Passing a struct literal into LogBox, using the LogBox DSL.
 
@@ -23,6 +23,38 @@ Configuration can be done in the following ways:
 
 This is the default configuration when LogBox is created with no config:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+{% code lineNumbers="true" %}
+```boxlang
+class {
+
+  /**
+   *  Configure logBox
+   */
+  function configure(){
+    logBox = {
+	// Define Appenders
+	appenders : { 
+		console : { class : "ConsoleAppender" } 
+	},
+	
+	// Root Logger
+	root : { 
+		levelmax : "INFO", 
+		appenders : "*" 
+	}
+    };
+  }
+
+}
+
+// Instantiate it
+application.logbox = new logbox.system.logging.LogBox();
+```
+{% endcode %}
+{% endtab %}
+{% tab title="CFML" %}
 {% code lineNumbers="true" %}
 ```cfscript
 component {
@@ -51,13 +83,58 @@ component {
 application.logbox = new logbox.system.logging.LogBox();
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 
 
-### 2. Portable CFC
+### 2. Portable Class
 
-You can create a CFC with a single `configure` method with the LogBox configuration in a variable called `logbox` using the LogBox DSL.
+You can create a class with a single `configure` method with the LogBox configuration in a variable called `logbox` using the LogBox DSL.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class output="false" hint="A LogBox Configuration Data Object" {
+
+/**
+ * Configure LogBox, that's it!
+ */
+function configure(){
+    logBox = {
+	// Define Appenders
+	appenders : {
+		coldboxTracer : {
+			class      : "ConsoleAppender",
+			layout     : "coldbox.tests.specs.logging.MockLayout",
+			properties : { name : "awesome" }
+		}
+	},
+	// Root Logger
+	root       : { levelmax : "INFO", levelMin : 0, appenders : "*" },
+	// Categories
+	categories : {
+		"coldbox.system"              : { levelMax : "INFO" },
+		"coldbox.system.interceptors" : { levelMin : 0, levelMax : "DEBUG", appenders : "*" },
+		"hello.model"                 : { levelMax : 4, appenders : "*" }
+	},
+	debug : [ "coldbox.system", "models.system" ],
+	info  : [ "hello.model", "yes.wow.wow" ],
+	warn  : [ "hello.model", "yes.wow.wow" ],
+	error : [ "hello.model", "yes.wow.wow" ],
+	fatal : [ "hello.model", "yes.wow.wow" ],
+	OFF   : [ "hello.model", "yes.wow.wow" ]
+    };
+}
+
+}
+
+
+// Instantiate it by passing the path to this class
+application.logbox = new logbox.system.logging.LogBox( "config.LogBoxConfig" );
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component output="false" hint="A LogBox Configuration Data Object" {
 
@@ -97,6 +174,8 @@ function configure(){
 // Instantiate it by passing the path to this CFC
 application.logbox = new logbox.system.logging.LogBox( "config.LogBoxConfig" );
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -114,7 +193,7 @@ config
   .OFF( "coldbox.system" )
   .debug( "coldbox.system.async" );
 
-// init logBox with Config CFC
+// init logBox with Config Class
 application.logbox = new logbox.system.logging.LogBox( config );
 ```
 

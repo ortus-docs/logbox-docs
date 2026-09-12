@@ -2,12 +2,42 @@
 
 As we have seen the LogBox DSL can be used in different contexts:
 
-* Portable CFC with a `configure()` method in a `logbox` variable
+* Portable class with a `configure()` method in a `logbox` variable
 * ColdBox config inside the `configure()` method in a `logbox` variable
 * A struct literal sent in to the constructor of LogBox
 
 NO matter how you dice it, it's the same LogBox Config DSL:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+**
+* A LogBox configuration data object
+*/
+class{
+
+    function configure(){
+        logBox = {
+
+            appenders : {},
+
+            root : {},
+
+            categories : {},
+
+            fatal : [],
+            error : [],
+            warn  : [],
+            info  : [],
+            debug : [],
+            off   : []
+
+        };
+    }
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 **
 * A LogBox configuration data object
@@ -34,6 +64,8 @@ component{
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Base Config
 

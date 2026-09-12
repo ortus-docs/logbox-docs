@@ -2,7 +2,7 @@
 
 Most applications require logging and tracing capabilities. One can usually use ColdFusion's standard `cflog` or `cftrace` tags but you can reach a limitation very fast.
 
-* What if you needed to log only certain severity levels for a particular CFC or piece of code?&#x20;
+* What if you needed to log only certain severity levels for a particular class or piece of code?&#x20;
 * What if you needed that severity to advise you via SMS or Twitter (yes Twitter)?&#x20;
 * What if you wanted to turn it off easily or reconfigure your logging levels?
 

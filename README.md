@@ -15,17 +15,21 @@ description: >-
 |_______| \______/   \______| |______/   \______/  /__/ \__\
 ```
 
-## LogBox Manual - Version 7.x
+## LogBox Manual - Version 8.x
 
 ![LogBox](.gitbook/assets/LogBox_300.png)
 
-LogBox is an enterprise ColdFusion (CFML) logging library designed to give you flexibility, simplicity, and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries. It allows you to easily build upon it's logging framework to meet any logging or reporting needs your applications have. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
+LogBox is a **BoxLang** and CFML logging library designed to give you flexibility, simplicity, and power when logging or tracing is needed in your applications. LogBox is also part of the ColdBox Platform suite of services and libraries. It allows you to easily build upon its logging framework to meet any logging or reporting needs your applications have. LogBox surpasses ColdFusion's very basic `cflog` tag. LogBox allows you to create multiple destinations for your loggings and even configure multiple destinations or change them at runtime.
 
 Almost every application needs logging and/or tracing capabilities, and we have developed LogBox to satisfy these needs. Although you should not over-use logging as it can slow down an application, LogBox allows you to filter out or cancel logging noise.
 
 {% hint style="info" %}
-**LogBox is a standalone framework for ColdFusion (CFML) applications, and it is also bundled with the ColdBox Platform.**
+**LogBox is a standalone framework for BoxLang and CFML applications, and it is also bundled with the ColdBox Platform.**
 {% endhint %}
+
+### Explore LogBox
+
+<table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>📝 <strong>Flexible Logging API</strong></td><td>Debug, info, warn, error, and fatal severities with lazy closure-based messages</td><td><a href="usage/using-a-logger-object/README.md">README.md</a></td></tr><tr><td>📤 <strong>Multiple Appenders</strong></td><td>Console, file, rolling file, database, email, socket, and async-wrapped appenders</td><td><a href="getting-started/how-does-logbox-work/appender.md">appender.md</a></td></tr><tr><td>🗂️ <strong>Category-Based Configuration</strong></td><td>Route different parts of your app to different destinations, down to the class level</td><td><a href="configuration/configuring-logbox/README.md">README.md</a></td></tr><tr><td>🧱 <strong>Custom Appenders &#x26; Layouts</strong></td><td>Extend <code>AbstractAppender</code> or implement your own layout formatting</td><td><a href="extending-logbox/README.md">README.md</a></td></tr></tbody></table>
 
 ## Versioning
 

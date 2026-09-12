@@ -1,6 +1,6 @@
 # Using LogBox
 
-Once you have created and configured the LogBox library, you can interact with it in order to get logger objects. The main methods you will use to interact with LogBox are the following, but I recommend you look at the CFC api ([http://www.coldbox.org/api](http://www.coldbox.org/api)) in order to get a listing of all available methods.
+Once you have created and configured the LogBox library, you can interact with it in order to get logger objects. The main methods you will use to interact with LogBox are the following, but I recommend you look at the class API ([http://www.coldbox.org/api](http://www.coldbox.org/api)) in order to get a listing of all available methods.
 
 | Method                                  | Description                                                                       |
 | --------------------------------------- | --------------------------------------------------------------------------------- |
@@ -10,7 +10,7 @@ Once you have created and configured the LogBox library, you can interact with i
 | `string getVersion()`                   | Get the current version of LogBox                                                 |
 | `string getCurrentAppenders()`          | Get a list of currently registered appenders                                      |
 | `string getCurrentLoggers()`            | Get a list of currently instantiated loggers                                      |
-| `void configure( LogBoxConfig config )` | Dynamically re-configure the LogBox library                                       |
+| `void configure( any config )`          | Dynamically re-configure the LogBox library. Accepts a `LogBoxConfig` object, a plain class path (string) to a config class, or a struct literal (same as the `config` argument to the LogBox constructor). |
 | `LogBox registerAppender( name, class, [properties], [layout], [levelMin], [levelMax] )` | Register a new appender into the running LogBox registry at runtime. Returns `LogBox` (fluent). |
 | `void shutdown()` | Gracefully shut down LogBox — calls `onShutdown()` on the config, shuts down all registered appenders and the async task executor. |
 
