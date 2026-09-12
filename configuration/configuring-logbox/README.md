@@ -26,7 +26,7 @@ This is the default configuration when LogBox is created with no config:
 {% tabs %}
 {% tab title="BoxLang" %}
 {% code lineNumbers="true" %}
-```boxlang
+```js
 class {
 
   /**
@@ -94,7 +94,7 @@ You can create a class with a single `configure` method with the LogBox configur
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class output="false" hint="A LogBox Configuration Data Object" {
 
 /**
