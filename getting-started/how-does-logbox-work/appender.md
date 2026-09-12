@@ -35,7 +35,7 @@ dbDebugger = {
 
 ## Configuration
 
-You can configure LogBox to use one or all of these appenders at any point in time. You can even register as many instances of any appender by defining a unique name for each. Here are examples of how one can configure appenders programmatically or via the simple configuration CFC:
+You can configure LogBox to use one or all of these appenders at any point in time. You can even register as many instances of any appender by defining a unique name for each. Here are examples of how one can configure appenders programmatically or via the simple configuration class:
 
 **Programmatic Approach**
 
@@ -64,7 +64,7 @@ config.appender(
 );
 ```
 
-**Configuration CFC approach**
+**Configuration Class approach**
 
 ```javascript
 function configure(){

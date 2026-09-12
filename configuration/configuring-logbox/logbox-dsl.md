@@ -2,7 +2,7 @@
 
 As we have seen the LogBox DSL can be used in different contexts:
 
-* Portable CFC with a `configure()` method in a `logbox` variable
+* Portable class with a `configure()` method in a `logbox` variable
 * ColdBox config inside the `configure()` method in a `logbox` variable
 * A struct literal sent in to the constructor of LogBox
 

@@ -9,7 +9,7 @@ LogBox has five main components:
 2. **Logger**
    1. The class in charge of sending messages to the appropriate destinations according to the category it has been defined with.
 3. **Categories**
-   1. Each Logger is created with a unique category that usually maps to the classpath of the CFC that uses the logger.
+   1. Each Logger is created with a unique category that usually maps to the classpath of the class that uses the logger.
 4. **Appenders**
    1. Components that receive log events and send them for storage in their implementations: files, consoles, etc.
 5. **Layouts**
