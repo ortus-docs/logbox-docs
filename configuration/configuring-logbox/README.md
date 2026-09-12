@@ -2,7 +2,7 @@
 
 LogBox comes pre-configured for operation with very basic logging.  However, you can customize it to your fancy using different configuration strategies using the programmatic configuration object or the [LogBox Config DSL](logbox-dsl.md).
 
-When you are in a ColdBox application, you will have a `logbox` structure in your `ColdBox.cfc` already that you can use, or you can create a portable class as well and place it in `config/LogBox.cfc`
+When you are in a ColdBox application, you will have a `logbox` structure in your `ColdBox.bx` (or `.cfc` for CFML) already that you can use, or you can create a portable class as well and place it in `config/LogBox.bx` (or `.cfc` for CFML)
 
 {% hint style="success" %}
 The cool thing about this LogBox DSL is that it is the same whether you are using LogBox in ColdBox applications or any other framework or non-framework ColdFusion application.&#x20;

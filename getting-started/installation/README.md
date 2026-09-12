@@ -14,7 +14,7 @@ The best way to install LogBox is by using **CommandBox CLI and package manager*
 
 ## ColdBox Installation
 
-If you are using LogBox within a ColdBox application context, then LogBox is part of the platform.  Just configure it via the `config/LogBox.cfc` and you are ready to roll.
+If you are using LogBox within a ColdBox application context, then LogBox is part of the platform.  Just configure it via the `config/LogBox.bx` (or `.cfc` for CFML) and you are ready to roll.
 
 ## Standalone Installation
 
