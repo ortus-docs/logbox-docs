@@ -10,7 +10,7 @@ NO matter how you dice it, it's the same LogBox Config DSL:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 **
 * A LogBox configuration data object
 */

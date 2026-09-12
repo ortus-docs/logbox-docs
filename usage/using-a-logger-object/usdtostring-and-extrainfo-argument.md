@@ -19,7 +19,7 @@ As you can see from the algorithm above, you can use the `extraInfo` argument to
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // User.cfc
 class{
 

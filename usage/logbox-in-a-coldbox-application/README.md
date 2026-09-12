@@ -4,7 +4,7 @@ Every ColdBox application can use LogBox by default since the main engine alread
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
     function configure(){
